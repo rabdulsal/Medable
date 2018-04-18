@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A3C40952087C76B0082A44C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C40942087C76B0082A44C /* AppDelegate.swift */; };
-		3A3C40972087C76B0082A44C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C40962087C76B0082A44C /* ViewController.swift */; };
+		3A3C40972087C76B0082A44C /* RegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C40962087C76B0082A44C /* RegistrationTableViewController.swift */; };
 		3A3C409A2087C76B0082A44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3C40982087C76B0082A44C /* Main.storyboard */; };
 		3A3C409C2087C76B0082A44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3C409B2087C76B0082A44C /* Assets.xcassets */; };
 		3A3C409F2087C76B0082A44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3C409D2087C76B0082A44C /* LaunchScreen.storyboard */; };
@@ -42,7 +42,7 @@
 		18F5C7D1704B882DA2148D30 /* Pods-MedableSandboxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedableSandboxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedableSandboxTests/Pods-MedableSandboxTests.release.xcconfig"; sourceTree = "<group>"; };
 		3A3C40912087C76B0082A44C /* MedableSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedableSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3C40942087C76B0082A44C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A3C40962087C76B0082A44C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A3C40962087C76B0082A44C /* RegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewController.swift; sourceTree = "<group>"; };
 		3A3C40992087C76B0082A44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A3C409B2087C76B0082A44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A3C409E2087C76B0082A44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,8 +93,8 @@
 		3A3C40882087C76A0082A44C = {
 			isa = PBXGroup;
 			children = (
-				3A3C40C22087D9860082A44C /* MedableSandbox-Bridging-Header.h */,
 				3A3C40932087C76B0082A44C /* MedableSandbox */,
+				3A3C40C22087D9860082A44C /* MedableSandbox-Bridging-Header.h */,
 				3A3C40A82087C76B0082A44C /* MedableSandboxTests */,
 				3A3C40B32087C76B0082A44C /* MedableSandboxUITests */,
 				3A3C40922087C76B0082A44C /* Products */,
@@ -117,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				3A3C40942087C76B0082A44C /* AppDelegate.swift */,
-				3A3C40962087C76B0082A44C /* ViewController.swift */,
+				3A3C40962087C76B0082A44C /* RegistrationTableViewController.swift */,
 				3A3C40982087C76B0082A44C /* Main.storyboard */,
 				3A3C409B2087C76B0082A44C /* Assets.xcassets */,
 				3A3C409D2087C76B0082A44C /* LaunchScreen.storyboard */,
@@ -244,7 +244,7 @@
 				TargetAttributes = {
 					3A3C40902087C76B0082A44C = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					3A3C40A42087C76B0082A44C = {
 						CreatedOnToolsVersion = 9.2;
@@ -312,9 +312,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MedableSandbox/Pods-MedableSandbox-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/zxcvbn-ios/zxcvbn_ios.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/zxcvbn_ios.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -457,7 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A3C40972087C76B0082A44C /* ViewController.swift in Sources */,
+				3A3C40972087C76B0082A44C /* RegistrationTableViewController.swift in Sources */,
 				3A3C40952087C76B0082A44C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,8 +628,9 @@
 			baseConfigurationReference = DDA7A47772A4E480982BA84D /* Pods-MedableSandbox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QT5VQXC56T;
 				INFOPLIST_FILE = MedableSandbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.upenn.MedableSandbox;
@@ -643,8 +647,9 @@
 			baseConfigurationReference = F11807F3AC5FE6AB66EB63D9 /* Pods-MedableSandbox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QT5VQXC56T;
 				INFOPLIST_FILE = MedableSandbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.upenn.MedableSandbox;
