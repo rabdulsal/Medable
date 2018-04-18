@@ -1,0 +1,1091 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18A7D8E3990D37403E1AAC39600AD120 /* Pods-MedableSandboxUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F10C196881EBFA7E6C06CC9FD0FF4B /* Pods-MedableSandboxUITests-dummy.m */; };
+		1CE7C2F9C2F17F48D092EDB6B99B2CB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2578232EACBEA939498D1157145D6144 /* DBZxcvbn.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4414F5EBBC320584BA5DE368645423 /* DBZxcvbn.m */; };
+		27636712BFA2FADAB9FC17BCD245DDCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3A36543D072678B2AF4E22AD91630FF8 /* zxcvbn-ios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7184CF1223E3F8DBB51CB647055DC34 /* zxcvbn-ios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C85ACE150DC88CF36B3C78E755C1107 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4FA4AEF03906CB8ED18F53D0C051D376 /* Pods-MedableSandboxUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA9918970850BEA4AB25B256A911CF15 /* Pods-MedableSandboxUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56A0EF2D86E3F7114B70035218AC45A0 /* Pods-MedableSandboxTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F31BD9192ACEE49263B55172541068CC /* Pods-MedableSandboxTests-dummy.m */; };
+		5A888DDB95340FA1370929C9F757F914 /* DBScorer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0496B4DC30A612E8FD358F0633ADD173 /* DBScorer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EECD54F22422E3F7656180D770CFB3B /* DBScorer.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D0E6AC00BA8593912BBECC0CDD6421 /* DBScorer.m */; };
+		6CFE8B5A06E0C8984DF6E9BBCAA72599 /* DBZxcvbn.h in Headers */ = {isa = PBXBuildFile; fileRef = A47E11AC3A603F44EB8F2080BBD7B38F /* DBZxcvbn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D0B793B77AC69975A003B89E480AC05 /* DBMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A1C1345F3E5FBEE8580B4D45C07D31 /* DBMatcher.m */; };
+		76B833230C684C0F7FA627A8A5C90951 /* DBMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C6831636D5FAB82A58EFDCA9639A73B7 /* DBMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82DD045F32BDD0E110951A1066BA70C9 /* Pods-MedableSandbox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F2689802152FE4AA63CD7A798A8CF5 /* Pods-MedableSandbox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2D3F3325FDD57CE9E37C172CBB60B71 /* adjacency_graphs.json in Resources */ = {isa = PBXBuildFile; fileRef = D191CA2C4F5A8BEC27B6C3273D73408B /* adjacency_graphs.json */; };
+		B2D98921B3F5F6B517F0E560A6581D63 /* DBPasswordStrengthMeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D6B80480DEC2400C31157676E5F234 /* DBPasswordStrengthMeterView.m */; };
+		B542C1E0E7893D868996F4D5BE1E3DC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B97377A22238A09F7227D8683EE559F4 /* frequency_lists.json in Resources */ = {isa = PBXBuildFile; fileRef = E9C8CEB774A89E538986BF0226FF8344 /* frequency_lists.json */; };
+		CAF76F7D793D3881015A630F51329EBE /* DBPasswordStrengthMeterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 883709151809AF1634ED890A4C687D74 /* DBPasswordStrengthMeterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF770ACE4ED2C5C81CADA53932DC37E6 /* zxcvbn-ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B457164B640B04DF1957216E36D6D9 /* zxcvbn-ios-dummy.m */; };
+		D7E53B457CE4BB14632C05768FD0DC56 /* Pods-MedableSandboxTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86496636744A2E7FAE6EEE0797368C4F /* Pods-MedableSandboxTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3DF25EB9F9B4DE48635F56F59B9B4CF /* Pods-MedableSandbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2185327528E85496726CF69C2D1AB3D /* Pods-MedableSandbox-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E826DAA52A611C38260EE21059C156B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E12FBC2C5A8D36922AB6E6B285E95EF5;
+			remoteInfo = "zxcvbn-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02F10C196881EBFA7E6C06CC9FD0FF4B /* Pods-MedableSandboxUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MedableSandboxUITests-dummy.m"; sourceTree = "<group>"; };
+		036B0F2B1B529D3E85C286B7E1FF6C18 /* MDSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDSerialization.h; path = Cortex/Medable.framework/Headers/MDSerialization.h; sourceTree = "<group>"; };
+		0496B4DC30A612E8FD358F0633ADD173 /* DBScorer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBScorer.h; path = Zxcvbn/DBScorer.h; sourceTree = "<group>"; };
+		059C4D351F9E98FDF7A11335C6563B13 /* MDInfoValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDInfoValidator.h; path = Cortex/Medable.framework/Headers/MDInfoValidator.h; sourceTree = "<group>"; };
+		0742684E02CB86384C51D635586B8349 /* MDArrayBodyProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDArrayBodyProperty.h; path = Cortex/Medable.framework/Headers/MDArrayBodyProperty.h; sourceTree = "<group>"; };
+		0D344F81FA1B04BD033181AF80D0F6B4 /* MDFastFileBodyProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDFastFileBodyProperty.h; path = Cortex/Medable.framework/Headers/MDFastFileBodyProperty.h; sourceTree = "<group>"; };
+		0E998D8A70E09D33FF27F37764C943A6 /* Pods-MedableSandbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MedableSandbox.release.xcconfig"; sourceTree = "<group>"; };
+		1051A59B6B8F28F4BC48122E47A490E7 /* MDEnvironment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDEnvironment.h; path = Cortex/Medable.framework/Headers/MDEnvironment.h; sourceTree = "<group>"; };
+		11F9EC5D594F50B266BDF03D35820808 /* zxcvbn-ios-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "zxcvbn-ios-prefix.pch"; sourceTree = "<group>"; };
+		13AD33CD010ED2A47F231B4711C98998 /* Pods-MedableSandboxUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MedableSandboxUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		162D717BF4EE75A6D82B092A7071EC28 /* MDBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDBundle.h; path = Cortex/Medable.framework/Headers/MDBundle.h; sourceTree = "<group>"; };
+		16A504C9EEB9421167655491E5E861AD /* NXDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NXDebug.h; path = Cortex/Medable.framework/Headers/NXDebug.h; sourceTree = "<group>"; };
+		1BCA0A475F79FBD8434DE9260BFE9AC9 /* Pods-MedableSandboxTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MedableSandboxTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1EB97E8A27010C4006053C68CECDFB55 /* Pods-MedableSandboxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MedableSandboxUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1F57FF3D98B40E67A148763DBA8F6326 /* MDAPIParameterFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDAPIParameterFactory.h; path = Cortex/Medable.framework/Headers/MDAPIParameterFactory.h; sourceTree = "<group>"; };
+		20C0C39BBB7344EA2D468E124454BB25 /* Pods-MedableSandbox-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MedableSandbox-frameworks.sh"; sourceTree = "<group>"; };
+		213514D60F407CDB5B67D24DBC6E1B33 /* MDConversation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDConversation.h; path = Cortex/Medable.framework/Headers/MDConversation.h; sourceTree = "<group>"; };
+		21AF5FD2784EF268F3FA4DA9884A71AD /* MDBundleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDBundleManager.h; path = Cortex/Medable.framework/Headers/MDBundleManager.h; sourceTree = "<group>"; };
+		243C74B2FDFD48A6DF4436C7D51D7C34 /* MDPatientFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDPatientFile.h; path = Cortex/Medable.framework/Headers/MDPatientFile.h; sourceTree = "<group>"; };
+		24E419DFB7ED41D9C85942DAA2FBACB8 /* MDACLDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDACLDefines.h; path = Cortex/Medable.framework/Headers/MDACLDefines.h; sourceTree = "<group>"; };
+		25D2554FC3664D51C11915BE1B6CFE43 /* NSDictionary+Path.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Path.h"; path = "Cortex/Medable.framework/Headers/NSDictionary+Path.h"; sourceTree = "<group>"; };
+		283A8B3487E82236B80754E8EAEEAE93 /* Pods-MedableSandboxUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MedableSandboxUITests-frameworks.sh"; sourceTree = "<group>"; };
+		2905A7841900E2373E798467FC40805C /* MDDataFriendly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDDataFriendly.h; path = Cortex/Medable.framework/Headers/MDDataFriendly.h; sourceTree = "<group>"; };
+		2AF58C484D96D988E6E674397EC267BD /* MDSimpleBodyProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDSimpleBodyProperty.h; path = Cortex/Medable.framework/Headers/MDSimpleBodyProperty.h; sourceTree = "<group>"; };
+		2BA040956B12759192F51133709BF579 /* MDObjectInstance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDObjectInstance.h; path = Cortex/Medable.framework/Headers/MDObjectInstance.h; sourceTree = "<group>"; };
+		2CFD54F161B957850414A38199F0D97C /* NSString+URLExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+URLExtensions.h"; path = "Cortex/Medable.framework/Headers/NSString+URLExtensions.h"; sourceTree = "<group>"; };
+		2D57BBD8D7F82074D6C7D8C802CC07E9 /* Pods-MedableSandbox-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MedableSandbox-acknowledgements.plist"; sourceTree = "<group>"; };
+		2E4018808D27C00D300B1CEDA1BF93C5 /* Pods-MedableSandbox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MedableSandbox.modulemap"; sourceTree = "<group>"; };
+		2E62DE05D1FCBF1B3C1E14E0BFEAF924 /* Medable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Medable.h; path = Cortex/Medable.framework/Headers/Medable.h; sourceTree = "<group>"; };
+		31C72D4B798D8C95B53CEC2EC0679061 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		338A6C34CDEEC39D1A9CDF7C4D552D78 /* MDACLObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDACLObject.h; path = Cortex/Medable.framework/Headers/MDACLObject.h; sourceTree = "<group>"; };
+		34A073180CA4EE159F3702DCB166856C /* NSDate+TimeZoneChange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+TimeZoneChange.h"; path = "Cortex/Medable.framework/Headers/NSDate+TimeZoneChange.h"; sourceTree = "<group>"; };
+		3615B1FDACAED7FF1B08B6CE9545D432 /* MDPropertyDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDPropertyDefinition.h; path = Cortex/Medable.framework/Headers/MDPropertyDefinition.h; sourceTree = "<group>"; };
+		3C837407CFB6406003A8A6F0AD3596A2 /* Pods-MedableSandboxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MedableSandboxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		41106B37C268B84269C6B80B098BD898 /* MDAccount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDAccount.h; path = Cortex/Medable.framework/Headers/MDAccount.h; sourceTree = "<group>"; };
+		446D0AE81B3DA100A3EBCBC3E97DDA2F /* MDContentDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDContentDownloader.h; path = Cortex/Medable.framework/Headers/MDContentDownloader.h; sourceTree = "<group>"; };
+		449709F38EBCD34E97D5562CDE7B3E5B /* Pods-MedableSandboxTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MedableSandboxTests-frameworks.sh"; sourceTree = "<group>"; };
+		487A670BEA084B429B089F5AC232B2A6 /* MDBaseDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDBaseDefinition.h; path = Cortex/Medable.framework/Headers/MDBaseDefinition.h; sourceTree = "<group>"; };
+		49B75137C22115E94D4D2E992AD79F20 /* MDAccountRole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDAccountRole.h; path = Cortex/Medable.framework/Headers/MDAccountRole.h; sourceTree = "<group>"; };
+		4A872CC4272DFDC953A55A00A4043A04 /* MDPostSegmentPropertyDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDPostSegmentPropertyDefinition.h; path = Cortex/Medable.framework/Headers/MDPostSegmentPropertyDefinition.h; sourceTree = "<group>"; };
+		4C36D1BE5BBF5964EB7F71ACAC339F09 /* MDTeam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDTeam.h; path = Cortex/Medable.framework/Headers/MDTeam.h; sourceTree = "<group>"; };
+		4CDA8BB0DC36F019F50E4B89D5266C70 /* MDTarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDTarget.h; path = Cortex/Medable.framework/Headers/MDTarget.h; sourceTree = "<group>"; };
+		4CDDCD05464A52BB0E1E88880E557A6B /* MDDataValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDDataValidator.h; path = Cortex/Medable.framework/Headers/MDDataValidator.h; sourceTree = "<group>"; };
+		4E970ECF396089AB2A466D9DACF7F24B /* NSArray+JSONPrettyString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+JSONPrettyString.h"; path = "Cortex/Medable.framework/Headers/NSArray+JSONPrettyString.h"; sourceTree = "<group>"; };
+		54B4060172DF4CE46E8CF687A108E1E7 /* Pods-MedableSandbox-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MedableSandbox-acknowledgements.markdown"; sourceTree = "<group>"; };
+		56AA6ABF86CE937599D3678FC2815643 /* MDPaginationHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDPaginationHelper.h; path = Cortex/Medable.framework/Headers/MDPaginationHelper.h; sourceTree = "<group>"; };
+		58520DC5A6381C3A365A5C39A582EB5D /* MDFileUpload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDFileUpload.h; path = Cortex/Medable.framework/Headers/MDFileUpload.h; sourceTree = "<group>"; };
+		5DF63C83CD9050399CD395AEC9174103 /* MDAnyBodyProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDAnyBodyProperty.h; path = Cortex/Medable.framework/Headers/MDAnyBodyProperty.h; sourceTree = "<group>"; };
+		605B8405E0F37A09347AC98C5331DC8D /* Pods-MedableSandbox-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MedableSandbox-resources.sh"; sourceTree = "<group>"; };
+		611F3A59DC4A6440341EC4B56ECF8360 /* Pods-MedableSandboxTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MedableSandboxTests-resources.sh"; sourceTree = "<group>"; };
+		622CE8741C5739B2A38AE0204D04BD3F /* MDAPIClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDAPIClient.h; path = Cortex/Medable.framework/Headers/MDAPIClient.h; sourceTree = "<group>"; };
+		64DAE8E44CDE87EBB55A3D842FF51D3B /* NSString+ThreeDigitsVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+ThreeDigitsVersion.h"; path = "Cortex/Medable.framework/Headers/NSString+ThreeDigitsVersion.h"; sourceTree = "<group>"; };
+		656A0BDF3FFDDC7133A5DFAB8BA46F2D /* MDPostComment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDPostComment.h; path = Cortex/Medable.framework/Headers/MDPostComment.h; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		66A4B8E7BE73DD17DE41DC6A77FAA2B4 /* MDPostSegmentDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDPostSegmentDefinition.h; path = Cortex/Medable.framework/Headers/MDPostSegmentDefinition.h; sourceTree = "<group>"; };
+		6722536CCE324AE604E0DC79F7952E1A /* MDFileBodyProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDFileBodyProperty.h; path = Cortex/Medable.framework/Headers/MDFileBodyProperty.h; sourceTree = "<group>"; };
+		67408077AC9D4813B5EE93F54B7C2B17 /* MDBaseBodyProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDBaseBodyProperty.h; path = Cortex/Medable.framework/Headers/MDBaseBodyProperty.h; sourceTree = "<group>"; };
+		67E2E91AC321BADE57632AC0768A52E4 /* NSDictionary+JSONPrettyString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+JSONPrettyString.h"; path = "Cortex/Medable.framework/Headers/NSDictionary+JSONPrettyString.h"; sourceTree = "<group>"; };
+		68B0900A827442E3F4DE513017297C01 /* Pods_MedableSandboxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MedableSandboxTests.framework; path = "Pods-MedableSandboxTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E263AE01D8738463799FAD33739F153 /* NSDate+MongoDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+MongoDB.h"; path = "Cortex/Medable.framework/Headers/NSDate+MongoDB.h"; sourceTree = "<group>"; };
+		71BCF7C44DC49517409C9A5B86D9B0E9 /* MDPropertyInstance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDPropertyInstance.h; path = Cortex/Medable.framework/Headers/MDPropertyInstance.h; sourceTree = "<group>"; };
+		7B96FD722370B1823134CD8CCD499300 /* MDPostDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDPostDefinition.h; path = Cortex/Medable.framework/Headers/MDPostDefinition.h; sourceTree = "<group>"; };
+		7F18F74AE1C676FBC46735BCD77A9498 /* MDAPIPathFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDAPIPathFactory.h; path = Cortex/Medable.framework/Headers/MDAPIPathFactory.h; sourceTree = "<group>"; };
+		8194766AC4EA5A0E4FACA2CEABAF7883 /* Pods_MedableSandboxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MedableSandboxUITests.framework; path = "Pods-MedableSandboxUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		859218501AAB99A5207DE9F2E7E0A42D /* MDFault.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDFault.h; path = Cortex/Medable.framework/Headers/MDFault.h; sourceTree = "<group>"; };
+		86496636744A2E7FAE6EEE0797368C4F /* Pods-MedableSandboxTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MedableSandboxTests-umbrella.h"; sourceTree = "<group>"; };
+		86D0E6AC00BA8593912BBECC0CDD6421 /* DBScorer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBScorer.m; path = Zxcvbn/DBScorer.m; sourceTree = "<group>"; };
+		87258F7BE45E10A3C04857EB1F2D4D12 /* MDBodyProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDBodyProperty.h; path = Cortex/Medable.framework/Headers/MDBodyProperty.h; sourceTree = "<group>"; };
+		883709151809AF1634ED890A4C687D74 /* DBPasswordStrengthMeterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBPasswordStrengthMeterView.h; path = Zxcvbn/DBPasswordStrengthMeterView.h; sourceTree = "<group>"; };
+		899588F57B6488966A78B91965569381 /* MDDateUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDDateUtilities.h; path = Cortex/Medable.framework/Headers/MDDateUtilities.h; sourceTree = "<group>"; };
+		8AE823F049C71A2F31DF3C5628CC5133 /* MDConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDConstants.h; path = Cortex/Medable.framework/Headers/MDConstants.h; sourceTree = "<group>"; };
+		8B92B5F8A1FB780F6CE44D56D8A2173C /* Pods-MedableSandboxTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MedableSandboxTests.modulemap"; sourceTree = "<group>"; };
+		8E2C28A65C6B63EA468FCB4061D9860E /* MDBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDBody.h; path = Cortex/Medable.framework/Headers/MDBody.h; sourceTree = "<group>"; };
+		9059FF887AC2D0F43DD9BE7D588FC944 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9110240B7125C6DB0C769D0F4FC21D0E /* MDGeneralBlocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDGeneralBlocks.h; path = Cortex/Medable.framework/Headers/MDGeneralBlocks.h; sourceTree = "<group>"; };
+		924CBEA7EE1F767CC359FD94670C33BB /* MDSchemaManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDSchemaManager.h; path = Cortex/Medable.framework/Headers/MDSchemaManager.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95A1C1345F3E5FBEE8580B4D45C07D31 /* DBMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBMatcher.m; path = Zxcvbn/DBMatcher.m; sourceTree = "<group>"; };
+		96A883E87F08126371911F5486F623AC /* Pods-MedableSandboxUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MedableSandboxUITests.modulemap"; sourceTree = "<group>"; };
+		9728C2090F622F7E1B88DF0596EAB62F /* Medable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Medable.framework; path = Cortex/Medable.framework; sourceTree = "<group>"; };
+		981D57778299403203E963D24C4974BF /* MDPost.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDPost.h; path = Cortex/Medable.framework/Headers/MDPost.h; sourceTree = "<group>"; };
+		9832453BD26FA1D411B3872612F06158 /* MDDocumentBodyProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDDocumentBodyProperty.h; path = Cortex/Medable.framework/Headers/MDDocumentBodyProperty.h; sourceTree = "<group>"; };
+		99C12F1B5AC8AABFA61D7E6251A2C585 /* Pods-MedableSandboxUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MedableSandboxUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9BC64E251E9BB8A42A07F1DD7E5899D0 /* MDFilePropertyValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDFilePropertyValue.h; path = Cortex/Medable.framework/Headers/MDFilePropertyValue.h; sourceTree = "<group>"; };
+		9CBA0216333AC1A6314E7224B5A4A185 /* Pods-MedableSandboxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MedableSandboxTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F6F055D846615129079175A17CBDA4F /* MDReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDReference.h; path = Cortex/Medable.framework/Headers/MDReference.h; sourceTree = "<group>"; };
+		A45620E48328FC818EC9FA86ED9DE763 /* MDObjectId.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDObjectId.h; path = Cortex/Medable.framework/Headers/MDObjectId.h; sourceTree = "<group>"; };
+		A47E11AC3A603F44EB8F2080BBD7B38F /* DBZxcvbn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBZxcvbn.h; path = Zxcvbn/DBZxcvbn.h; sourceTree = "<group>"; };
+		A489E9E4E215B0ABABA425443CD0987B /* zxcvbn-ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "zxcvbn-ios.modulemap"; sourceTree = "<group>"; };
+		A84730C5C077BAC82FE4FF6FACB05A17 /* NSDictionary+RemoveNullObjects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+RemoveNullObjects.h"; path = "Cortex/Medable.framework/Headers/NSDictionary+RemoveNullObjects.h"; sourceTree = "<group>"; };
+		A8B457164B640B04DF1957216E36D6D9 /* zxcvbn-ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "zxcvbn-ios-dummy.m"; sourceTree = "<group>"; };
+		AAB758AA725D43E78CF1BC4971806701 /* NSData+Mime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+Mime.h"; path = "Cortex/Medable.framework/Headers/NSData+Mime.h"; sourceTree = "<group>"; };
+		AAD80E20261051516D6CED1D999FBD02 /* MDFacet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDFacet.h; path = Cortex/Medable.framework/Headers/MDFacet.h; sourceTree = "<group>"; };
+		AC1B236DB24C868FC858D386DCE00CFA /* NSFileManager+Medable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+Medable.h"; path = "Cortex/Medable.framework/Headers/NSFileManager+Medable.h"; sourceTree = "<group>"; };
+		ACB227FD30FED41EF8DF496056791AA7 /* Pods-MedableSandboxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MedableSandboxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B19D8EF8315011FEEC20D581E6E26A39 /* MDPostSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDPostSegment.h; path = Cortex/Medable.framework/Headers/MDPostSegment.h; sourceTree = "<group>"; };
+		B209E2681DCDB7F55C67C8E3ACCF4740 /* MDAttachmentMaps.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDAttachmentMaps.h; path = Cortex/Medable.framework/Headers/MDAttachmentMaps.h; sourceTree = "<group>"; };
+		B2185327528E85496726CF69C2D1AB3D /* Pods-MedableSandbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MedableSandbox-dummy.m"; sourceTree = "<group>"; };
+		B2D6B80480DEC2400C31157676E5F234 /* DBPasswordStrengthMeterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBPasswordStrengthMeterView.m; path = Zxcvbn/DBPasswordStrengthMeterView.m; sourceTree = "<group>"; };
+		B531C283D211A3C87BF9C2AB9E048592 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7B7FCFF583255F2D73D2FC3CE81B623 /* MDAssetManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDAssetManager.h; path = Cortex/Medable.framework/Headers/MDAssetManager.h; sourceTree = "<group>"; };
+		B94DCA1281A1284178F7097916793071 /* MDTypedefs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDTypedefs.h; path = Cortex/Medable.framework/Headers/MDTypedefs.h; sourceTree = "<group>"; };
+		BCBDF0B053B7B240F31BCBABF2722897 /* MDDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDDefines.h; path = Cortex/Medable.framework/Headers/MDDefines.h; sourceTree = "<group>"; };
+		C0C4FB987F4FB3CEB86795D46912BFC4 /* MDBaseInstance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDBaseInstance.h; path = Cortex/Medable.framework/Headers/MDBaseInstance.h; sourceTree = "<group>"; };
+		C3DC0144E0EA2A27BA78373D83FFAB66 /* Pods-MedableSandboxUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MedableSandboxUITests-resources.sh"; sourceTree = "<group>"; };
+		C60DF7CA15792988BA72D4D63A9FA269 /* MDPaginationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDPaginationManager.h; path = Cortex/Medable.framework/Headers/MDPaginationManager.h; sourceTree = "<group>"; };
+		C6831636D5FAB82A58EFDCA9639A73B7 /* DBMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBMatcher.h; path = Zxcvbn/DBMatcher.h; sourceTree = "<group>"; };
+		C7184CF1223E3F8DBB51CB647055DC34 /* zxcvbn-ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "zxcvbn-ios-umbrella.h"; sourceTree = "<group>"; };
+		CB3C24023CD340CB492FAC9FAFB2D97E /* MDNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDNotification.h; path = Cortex/Medable.framework/Headers/MDNotification.h; sourceTree = "<group>"; };
+		CF9CA91BC5C8BECE122BC898A60E380C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D191CA2C4F5A8BEC27B6C3273D73408B /* adjacency_graphs.json */ = {isa = PBXFileReference; includeInIndex = 1; name = adjacency_graphs.json; path = Zxcvbn/generated/adjacency_graphs.json; sourceTree = "<group>"; };
+		D3E54095B7C02A758DC120093570E9B6 /* MDPostBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDPostBody.h; path = Cortex/Medable.framework/Headers/MDPostBody.h; sourceTree = "<group>"; };
+		D48810C803079771C80843F86D53AEF2 /* MDOrg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDOrg.h; path = Cortex/Medable.framework/Headers/MDOrg.h; sourceTree = "<group>"; };
+		D50219C2519878E15F3951189D3CDA3D /* MDUploadOperations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDUploadOperations.h; path = Cortex/Medable.framework/Headers/MDUploadOperations.h; sourceTree = "<group>"; };
+		D55ECD7EFC35AC241CC63F52E5820B2A /* Pods_MedableSandbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MedableSandbox.framework; path = "Pods-MedableSandbox.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE4414F5EBBC320584BA5DE368645423 /* DBZxcvbn.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBZxcvbn.m; path = Zxcvbn/DBZxcvbn.m; sourceTree = "<group>"; };
+		E083DABC4EBF971F720A625B3BE9F107 /* Pods-MedableSandboxTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MedableSandboxTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E0961F47CE2B724F17F315A967311229 /* Pods-MedableSandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MedableSandbox.debug.xcconfig"; sourceTree = "<group>"; };
+		E45442608AB8194D9451FF66B695CDBF /* MDFastBodyProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDFastBodyProperty.h; path = Cortex/Medable.framework/Headers/MDFastBodyProperty.h; sourceTree = "<group>"; };
+		E4CCB61A91C3F7A45DEA0ACDDC608E94 /* MDObjectDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDObjectDefinition.h; path = Cortex/Medable.framework/Headers/MDObjectDefinition.h; sourceTree = "<group>"; };
+		E547F68319B586BAA7264A19C5D87FF9 /* MDImageOverlayPair.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDImageOverlayPair.h; path = Cortex/Medable.framework/Headers/MDImageOverlayPair.h; sourceTree = "<group>"; };
+		E76EDA5D9F51862E85E658DAEA5D37AB /* MDFacetDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDFacetDefinition.h; path = Cortex/Medable.framework/Headers/MDFacetDefinition.h; sourceTree = "<group>"; };
+		E9C8CEB774A89E538986BF0226FF8344 /* frequency_lists.json */ = {isa = PBXFileReference; includeInIndex = 1; name = frequency_lists.json; path = Zxcvbn/generated/frequency_lists.json; sourceTree = "<group>"; };
+		E9F2689802152FE4AA63CD7A798A8CF5 /* Pods-MedableSandbox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MedableSandbox-umbrella.h"; sourceTree = "<group>"; };
+		EA9918970850BEA4AB25B256A911CF15 /* Pods-MedableSandboxUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MedableSandboxUITests-umbrella.h"; sourceTree = "<group>"; };
+		EEBE816112C4561DD61BFE10B89C927E /* MDLocalFault.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDLocalFault.h; path = Cortex/Medable.framework/Headers/MDLocalFault.h; sourceTree = "<group>"; };
+		F08301CDFCDDFF700A03D5F462430A93 /* MDConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDConnection.h; path = Cortex/Medable.framework/Headers/MDConnection.h; sourceTree = "<group>"; };
+		F0A052D23BE83D314CC0A023B3F23C51 /* MDNotificationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDNotificationManager.h; path = Cortex/Medable.framework/Headers/MDNotificationManager.h; sourceTree = "<group>"; };
+		F26233E4B3D5B1D5F25CA3761D95BA7D /* zxcvbn_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = zxcvbn_ios.framework; path = "zxcvbn-ios.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31BD9192ACEE49263B55172541068CC /* Pods-MedableSandboxTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MedableSandboxTests-dummy.m"; sourceTree = "<group>"; };
+		F50EB5537FBDF20165701AC8537883DD /* MDFeedDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDFeedDefinition.h; path = Cortex/Medable.framework/Headers/MDFeedDefinition.h; sourceTree = "<group>"; };
+		F78B575005B30FCE684533F7C9D01270 /* NSObject+JSONStringify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+JSONStringify.h"; path = "Cortex/Medable.framework/Headers/NSObject+JSONStringify.h"; sourceTree = "<group>"; };
+		F82776BE571A7004FF6E7129DC789B16 /* MDProfileInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDProfileInfo.h; path = Cortex/Medable.framework/Headers/MDProfileInfo.h; sourceTree = "<group>"; };
+		F93D1497811B0C25A954F6F5535339C9 /* zxcvbn-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "zxcvbn-ios.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25E94E4D903864284630FE005FD0FC8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B542C1E0E7893D868996F4D5BE1E3DC6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66556D47F5852B3983C4EB8A128EB049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C85ACE150DC88CF36B3C78E755C1107 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEDB41A66D27B066186FB85F61E5087D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27636712BFA2FADAB9FC17BCD245DDCB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BADD13A990C51D74787C709B36EEE796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE7C2F9C2F17F48D092EDB6B99B2CB6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04C15EA32F39C356D0EE6FDDCD393B60 /* Pods-MedableSandboxTests */ = {
+			isa = PBXGroup;
+			children = (
+				B531C283D211A3C87BF9C2AB9E048592 /* Info.plist */,
+				8B92B5F8A1FB780F6CE44D56D8A2173C /* Pods-MedableSandboxTests.modulemap */,
+				E083DABC4EBF971F720A625B3BE9F107 /* Pods-MedableSandboxTests-acknowledgements.markdown */,
+				1BCA0A475F79FBD8434DE9260BFE9AC9 /* Pods-MedableSandboxTests-acknowledgements.plist */,
+				F31BD9192ACEE49263B55172541068CC /* Pods-MedableSandboxTests-dummy.m */,
+				449709F38EBCD34E97D5562CDE7B3E5B /* Pods-MedableSandboxTests-frameworks.sh */,
+				611F3A59DC4A6440341EC4B56ECF8360 /* Pods-MedableSandboxTests-resources.sh */,
+				86496636744A2E7FAE6EEE0797368C4F /* Pods-MedableSandboxTests-umbrella.h */,
+				ACB227FD30FED41EF8DF496056791AA7 /* Pods-MedableSandboxTests.debug.xcconfig */,
+				9CBA0216333AC1A6314E7224B5A4A185 /* Pods-MedableSandboxTests.release.xcconfig */,
+			);
+			name = "Pods-MedableSandboxTests";
+			path = "Target Support Files/Pods-MedableSandboxTests";
+			sourceTree = "<group>";
+		};
+		4543010B5D15BFC6D0991DC007892D7B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D191CA2C4F5A8BEC27B6C3273D73408B /* adjacency_graphs.json */,
+				E9C8CEB774A89E538986BF0226FF8344 /* frequency_lists.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		68A40D93B872D5FD1562CFD79655826C /* Pods-MedableSandbox */ = {
+			isa = PBXGroup;
+			children = (
+				9059FF887AC2D0F43DD9BE7D588FC944 /* Info.plist */,
+				2E4018808D27C00D300B1CEDA1BF93C5 /* Pods-MedableSandbox.modulemap */,
+				54B4060172DF4CE46E8CF687A108E1E7 /* Pods-MedableSandbox-acknowledgements.markdown */,
+				2D57BBD8D7F82074D6C7D8C802CC07E9 /* Pods-MedableSandbox-acknowledgements.plist */,
+				B2185327528E85496726CF69C2D1AB3D /* Pods-MedableSandbox-dummy.m */,
+				20C0C39BBB7344EA2D468E124454BB25 /* Pods-MedableSandbox-frameworks.sh */,
+				605B8405E0F37A09347AC98C5331DC8D /* Pods-MedableSandbox-resources.sh */,
+				E9F2689802152FE4AA63CD7A798A8CF5 /* Pods-MedableSandbox-umbrella.h */,
+				E0961F47CE2B724F17F315A967311229 /* Pods-MedableSandbox.debug.xcconfig */,
+				0E998D8A70E09D33FF27F37764C943A6 /* Pods-MedableSandbox.release.xcconfig */,
+			);
+			name = "Pods-MedableSandbox";
+			path = "Target Support Files/Pods-MedableSandbox";
+			sourceTree = "<group>";
+		};
+		72AD497B857F1A0AF7B2ACC84DB10577 /* zxcvbn-ios */ = {
+			isa = PBXGroup;
+			children = (
+				C6831636D5FAB82A58EFDCA9639A73B7 /* DBMatcher.h */,
+				95A1C1345F3E5FBEE8580B4D45C07D31 /* DBMatcher.m */,
+				883709151809AF1634ED890A4C687D74 /* DBPasswordStrengthMeterView.h */,
+				B2D6B80480DEC2400C31157676E5F234 /* DBPasswordStrengthMeterView.m */,
+				0496B4DC30A612E8FD358F0633ADD173 /* DBScorer.h */,
+				86D0E6AC00BA8593912BBECC0CDD6421 /* DBScorer.m */,
+				A47E11AC3A603F44EB8F2080BBD7B38F /* DBZxcvbn.h */,
+				DE4414F5EBBC320584BA5DE368645423 /* DBZxcvbn.m */,
+				4543010B5D15BFC6D0991DC007892D7B /* Resources */,
+				B9A5CC4B4B31D16F4235EF36C0D692E6 /* Support Files */,
+			);
+			name = "zxcvbn-ios";
+			path = "zxcvbn-ios";
+			sourceTree = "<group>";
+		};
+		7574701A055D5F5B07856B59D3EA35F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D10E8146E20D0BA98877CD1BAA26EF0 /* Medable */,
+				72AD497B857F1A0AF7B2ACC84DB10577 /* zxcvbn-ios */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		78A29ACEE5686A41EB5989A334AF1010 /* Pods-MedableSandboxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF9CA91BC5C8BECE122BC898A60E380C /* Info.plist */,
+				96A883E87F08126371911F5486F623AC /* Pods-MedableSandboxUITests.modulemap */,
+				13AD33CD010ED2A47F231B4711C98998 /* Pods-MedableSandboxUITests-acknowledgements.markdown */,
+				99C12F1B5AC8AABFA61D7E6251A2C585 /* Pods-MedableSandboxUITests-acknowledgements.plist */,
+				02F10C196881EBFA7E6C06CC9FD0FF4B /* Pods-MedableSandboxUITests-dummy.m */,
+				283A8B3487E82236B80754E8EAEEAE93 /* Pods-MedableSandboxUITests-frameworks.sh */,
+				C3DC0144E0EA2A27BA78373D83FFAB66 /* Pods-MedableSandboxUITests-resources.sh */,
+				EA9918970850BEA4AB25B256A911CF15 /* Pods-MedableSandboxUITests-umbrella.h */,
+				3C837407CFB6406003A8A6F0AD3596A2 /* Pods-MedableSandboxUITests.debug.xcconfig */,
+				1EB97E8A27010C4006053C68CECDFB55 /* Pods-MedableSandboxUITests.release.xcconfig */,
+			);
+			name = "Pods-MedableSandboxUITests";
+			path = "Target Support Files/Pods-MedableSandboxUITests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				7574701A055D5F5B07856B59D3EA35F8 /* Pods */,
+				D994F8DD8739D45B5C22B3B1DCAB26B0 /* Products */,
+				8BD5280365D34EFACF70D395A586C3F9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8BD5280365D34EFACF70D395A586C3F9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				68A40D93B872D5FD1562CFD79655826C /* Pods-MedableSandbox */,
+				04C15EA32F39C356D0EE6FDDCD393B60 /* Pods-MedableSandboxTests */,
+				78A29ACEE5686A41EB5989A334AF1010 /* Pods-MedableSandboxUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8DFDC11BF7119A4DF8B964C1A531C0FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9728C2090F622F7E1B88DF0596EAB62F /* Medable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D10E8146E20D0BA98877CD1BAA26EF0 /* Medable */ = {
+			isa = PBXGroup;
+			children = (
+				41106B37C268B84269C6B80B098BD898 /* MDAccount.h */,
+				49B75137C22115E94D4D2E992AD79F20 /* MDAccountRole.h */,
+				24E419DFB7ED41D9C85942DAA2FBACB8 /* MDACLDefines.h */,
+				338A6C34CDEEC39D1A9CDF7C4D552D78 /* MDACLObject.h */,
+				5DF63C83CD9050399CD395AEC9174103 /* MDAnyBodyProperty.h */,
+				622CE8741C5739B2A38AE0204D04BD3F /* MDAPIClient.h */,
+				1F57FF3D98B40E67A148763DBA8F6326 /* MDAPIParameterFactory.h */,
+				7F18F74AE1C676FBC46735BCD77A9498 /* MDAPIPathFactory.h */,
+				0742684E02CB86384C51D635586B8349 /* MDArrayBodyProperty.h */,
+				B7B7FCFF583255F2D73D2FC3CE81B623 /* MDAssetManager.h */,
+				B209E2681DCDB7F55C67C8E3ACCF4740 /* MDAttachmentMaps.h */,
+				67408077AC9D4813B5EE93F54B7C2B17 /* MDBaseBodyProperty.h */,
+				487A670BEA084B429B089F5AC232B2A6 /* MDBaseDefinition.h */,
+				C0C4FB987F4FB3CEB86795D46912BFC4 /* MDBaseInstance.h */,
+				8E2C28A65C6B63EA468FCB4061D9860E /* MDBody.h */,
+				87258F7BE45E10A3C04857EB1F2D4D12 /* MDBodyProperty.h */,
+				162D717BF4EE75A6D82B092A7071EC28 /* MDBundle.h */,
+				21AF5FD2784EF268F3FA4DA9884A71AD /* MDBundleManager.h */,
+				F08301CDFCDDFF700A03D5F462430A93 /* MDConnection.h */,
+				8AE823F049C71A2F31DF3C5628CC5133 /* MDConstants.h */,
+				446D0AE81B3DA100A3EBCBC3E97DDA2F /* MDContentDownloader.h */,
+				213514D60F407CDB5B67D24DBC6E1B33 /* MDConversation.h */,
+				2905A7841900E2373E798467FC40805C /* MDDataFriendly.h */,
+				4CDDCD05464A52BB0E1E88880E557A6B /* MDDataValidator.h */,
+				899588F57B6488966A78B91965569381 /* MDDateUtilities.h */,
+				BCBDF0B053B7B240F31BCBABF2722897 /* MDDefines.h */,
+				9832453BD26FA1D411B3872612F06158 /* MDDocumentBodyProperty.h */,
+				1051A59B6B8F28F4BC48122E47A490E7 /* MDEnvironment.h */,
+				AAD80E20261051516D6CED1D999FBD02 /* MDFacet.h */,
+				E76EDA5D9F51862E85E658DAEA5D37AB /* MDFacetDefinition.h */,
+				E45442608AB8194D9451FF66B695CDBF /* MDFastBodyProperty.h */,
+				0D344F81FA1B04BD033181AF80D0F6B4 /* MDFastFileBodyProperty.h */,
+				859218501AAB99A5207DE9F2E7E0A42D /* MDFault.h */,
+				F50EB5537FBDF20165701AC8537883DD /* MDFeedDefinition.h */,
+				6722536CCE324AE604E0DC79F7952E1A /* MDFileBodyProperty.h */,
+				9BC64E251E9BB8A42A07F1DD7E5899D0 /* MDFilePropertyValue.h */,
+				58520DC5A6381C3A365A5C39A582EB5D /* MDFileUpload.h */,
+				9110240B7125C6DB0C769D0F4FC21D0E /* MDGeneralBlocks.h */,
+				E547F68319B586BAA7264A19C5D87FF9 /* MDImageOverlayPair.h */,
+				059C4D351F9E98FDF7A11335C6563B13 /* MDInfoValidator.h */,
+				EEBE816112C4561DD61BFE10B89C927E /* MDLocalFault.h */,
+				CB3C24023CD340CB492FAC9FAFB2D97E /* MDNotification.h */,
+				F0A052D23BE83D314CC0A023B3F23C51 /* MDNotificationManager.h */,
+				E4CCB61A91C3F7A45DEA0ACDDC608E94 /* MDObjectDefinition.h */,
+				A45620E48328FC818EC9FA86ED9DE763 /* MDObjectId.h */,
+				2BA040956B12759192F51133709BF579 /* MDObjectInstance.h */,
+				D48810C803079771C80843F86D53AEF2 /* MDOrg.h */,
+				56AA6ABF86CE937599D3678FC2815643 /* MDPaginationHelper.h */,
+				C60DF7CA15792988BA72D4D63A9FA269 /* MDPaginationManager.h */,
+				243C74B2FDFD48A6DF4436C7D51D7C34 /* MDPatientFile.h */,
+				981D57778299403203E963D24C4974BF /* MDPost.h */,
+				D3E54095B7C02A758DC120093570E9B6 /* MDPostBody.h */,
+				656A0BDF3FFDDC7133A5DFAB8BA46F2D /* MDPostComment.h */,
+				7B96FD722370B1823134CD8CCD499300 /* MDPostDefinition.h */,
+				B19D8EF8315011FEEC20D581E6E26A39 /* MDPostSegment.h */,
+				66A4B8E7BE73DD17DE41DC6A77FAA2B4 /* MDPostSegmentDefinition.h */,
+				4A872CC4272DFDC953A55A00A4043A04 /* MDPostSegmentPropertyDefinition.h */,
+				F82776BE571A7004FF6E7129DC789B16 /* MDProfileInfo.h */,
+				3615B1FDACAED7FF1B08B6CE9545D432 /* MDPropertyDefinition.h */,
+				71BCF7C44DC49517409C9A5B86D9B0E9 /* MDPropertyInstance.h */,
+				9F6F055D846615129079175A17CBDA4F /* MDReference.h */,
+				924CBEA7EE1F767CC359FD94670C33BB /* MDSchemaManager.h */,
+				036B0F2B1B529D3E85C286B7E1FF6C18 /* MDSerialization.h */,
+				2AF58C484D96D988E6E674397EC267BD /* MDSimpleBodyProperty.h */,
+				4CDA8BB0DC36F019F50E4B89D5266C70 /* MDTarget.h */,
+				4C36D1BE5BBF5964EB7F71ACAC339F09 /* MDTeam.h */,
+				B94DCA1281A1284178F7097916793071 /* MDTypedefs.h */,
+				D50219C2519878E15F3951189D3CDA3D /* MDUploadOperations.h */,
+				2E62DE05D1FCBF1B3C1E14E0BFEAF924 /* Medable.h */,
+				4E970ECF396089AB2A466D9DACF7F24B /* NSArray+JSONPrettyString.h */,
+				AAB758AA725D43E78CF1BC4971806701 /* NSData+Mime.h */,
+				6E263AE01D8738463799FAD33739F153 /* NSDate+MongoDB.h */,
+				34A073180CA4EE159F3702DCB166856C /* NSDate+TimeZoneChange.h */,
+				67E2E91AC321BADE57632AC0768A52E4 /* NSDictionary+JSONPrettyString.h */,
+				25D2554FC3664D51C11915BE1B6CFE43 /* NSDictionary+Path.h */,
+				A84730C5C077BAC82FE4FF6FACB05A17 /* NSDictionary+RemoveNullObjects.h */,
+				AC1B236DB24C868FC858D386DCE00CFA /* NSFileManager+Medable.h */,
+				F78B575005B30FCE684533F7C9D01270 /* NSObject+JSONStringify.h */,
+				64DAE8E44CDE87EBB55A3D842FF51D3B /* NSString+ThreeDigitsVersion.h */,
+				2CFD54F161B957850414A38199F0D97C /* NSString+URLExtensions.h */,
+				16A504C9EEB9421167655491E5E861AD /* NXDebug.h */,
+				8DFDC11BF7119A4DF8B964C1A531C0FB /* Frameworks */,
+			);
+			name = Medable;
+			path = Medable;
+			sourceTree = "<group>";
+		};
+		B9A5CC4B4B31D16F4235EF36C0D692E6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				31C72D4B798D8C95B53CEC2EC0679061 /* Info.plist */,
+				A489E9E4E215B0ABABA425443CD0987B /* zxcvbn-ios.modulemap */,
+				F93D1497811B0C25A954F6F5535339C9 /* zxcvbn-ios.xcconfig */,
+				A8B457164B640B04DF1957216E36D6D9 /* zxcvbn-ios-dummy.m */,
+				11F9EC5D594F50B266BDF03D35820808 /* zxcvbn-ios-prefix.pch */,
+				C7184CF1223E3F8DBB51CB647055DC34 /* zxcvbn-ios-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/zxcvbn-ios";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D994F8DD8739D45B5C22B3B1DCAB26B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D55ECD7EFC35AC241CC63F52E5820B2A /* Pods_MedableSandbox.framework */,
+				68B0900A827442E3F4DE513017297C01 /* Pods_MedableSandboxTests.framework */,
+				8194766AC4EA5A0E4FACA2CEABAF7883 /* Pods_MedableSandboxUITests.framework */,
+				F26233E4B3D5B1D5F25CA3761D95BA7D /* zxcvbn_ios.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		10F8A9A0FB9119BD5E4C58655853BBC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82DD045F32BDD0E110951A1066BA70C9 /* Pods-MedableSandbox-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206C9F4DE6E8B44A9A351667D3EE2B19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B833230C684C0F7FA627A8A5C90951 /* DBMatcher.h in Headers */,
+				CAF76F7D793D3881015A630F51329EBE /* DBPasswordStrengthMeterView.h in Headers */,
+				5A888DDB95340FA1370929C9F757F914 /* DBScorer.h in Headers */,
+				6CFE8B5A06E0C8984DF6E9BBCAA72599 /* DBZxcvbn.h in Headers */,
+				3A36543D072678B2AF4E22AD91630FF8 /* zxcvbn-ios-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6681C2F667EB065061E266C80D7C6AD8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA4AEF03906CB8ED18F53D0C051D376 /* Pods-MedableSandboxUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C8854F07DF030B27FCD27C4289021DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E53B457CE4BB14632C05768FD0DC56 /* Pods-MedableSandboxTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		42FAB36EEC04FB6329840C80766D2CC2 /* Pods-MedableSandboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C1056AA53A9716050D02568C08CE40 /* Build configuration list for PBXNativeTarget "Pods-MedableSandboxTests" */;
+			buildPhases = (
+				A318CD5C38F2BC0E2DB4BDDA25037B21 /* Sources */,
+				25E94E4D903864284630FE005FD0FC8B /* Frameworks */,
+				7C8854F07DF030B27FCD27C4289021DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MedableSandboxTests";
+			productName = "Pods-MedableSandboxTests";
+			productReference = 68B0900A827442E3F4DE513017297C01 /* Pods_MedableSandboxTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0DB135B5BFAC20F1E88DBC01C811187 /* Pods-MedableSandboxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2E312F415D93A69C786C84932A2045E /* Build configuration list for PBXNativeTarget "Pods-MedableSandboxUITests" */;
+			buildPhases = (
+				9F242DFDB5846DE9228BEEF671C4D048 /* Sources */,
+				66556D47F5852B3983C4EB8A128EB049 /* Frameworks */,
+				6681C2F667EB065061E266C80D7C6AD8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MedableSandboxUITests";
+			productName = "Pods-MedableSandboxUITests";
+			productReference = 8194766AC4EA5A0E4FACA2CEABAF7883 /* Pods_MedableSandboxUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E12FBC2C5A8D36922AB6E6B285E95EF5 /* zxcvbn-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 701C7602FE4B1C3F0F2B3146C5968245 /* Build configuration list for PBXNativeTarget "zxcvbn-ios" */;
+			buildPhases = (
+				1749CF334245D197C909AC39FC47E524 /* Sources */,
+				AEDB41A66D27B066186FB85F61E5087D /* Frameworks */,
+				206C9F4DE6E8B44A9A351667D3EE2B19 /* Headers */,
+				D822949E12A7FB909CB686629986B0C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "zxcvbn-ios";
+			productName = "zxcvbn-ios";
+			productReference = F26233E4B3D5B1D5F25CA3761D95BA7D /* zxcvbn_ios.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F9B90ABB25FF625A6D9A1B8AAEC70177 /* Pods-MedableSandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 991DC0998292295EF30E7652F3A3D0A7 /* Build configuration list for PBXNativeTarget "Pods-MedableSandbox" */;
+			buildPhases = (
+				2B26FA3FE383697603423F241F374512 /* Sources */,
+				BADD13A990C51D74787C709B36EEE796 /* Frameworks */,
+				10F8A9A0FB9119BD5E4C58655853BBC2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EC746EEACED616863B557B89C6385B1 /* PBXTargetDependency */,
+			);
+			name = "Pods-MedableSandbox";
+			productName = "Pods-MedableSandbox";
+			productReference = D55ECD7EFC35AC241CC63F52E5820B2A /* Pods_MedableSandbox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D994F8DD8739D45B5C22B3B1DCAB26B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9B90ABB25FF625A6D9A1B8AAEC70177 /* Pods-MedableSandbox */,
+				42FAB36EEC04FB6329840C80766D2CC2 /* Pods-MedableSandboxTests */,
+				A0DB135B5BFAC20F1E88DBC01C811187 /* Pods-MedableSandboxUITests */,
+				E12FBC2C5A8D36922AB6E6B285E95EF5 /* zxcvbn-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D822949E12A7FB909CB686629986B0C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D3F3325FDD57CE9E37C172CBB60B71 /* adjacency_graphs.json in Resources */,
+				B97377A22238A09F7227D8683EE559F4 /* frequency_lists.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1749CF334245D197C909AC39FC47E524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0B793B77AC69975A003B89E480AC05 /* DBMatcher.m in Sources */,
+				B2D98921B3F5F6B517F0E560A6581D63 /* DBPasswordStrengthMeterView.m in Sources */,
+				5EECD54F22422E3F7656180D770CFB3B /* DBScorer.m in Sources */,
+				2578232EACBEA939498D1157145D6144 /* DBZxcvbn.m in Sources */,
+				CF770ACE4ED2C5C81CADA53932DC37E6 /* zxcvbn-ios-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B26FA3FE383697603423F241F374512 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3DF25EB9F9B4DE48635F56F59B9B4CF /* Pods-MedableSandbox-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F242DFDB5846DE9228BEEF671C4D048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A7D8E3990D37403E1AAC39600AD120 /* Pods-MedableSandboxUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A318CD5C38F2BC0E2DB4BDDA25037B21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A0EF2D86E3F7114B70035218AC45A0 /* Pods-MedableSandboxTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EC746EEACED616863B557B89C6385B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "zxcvbn-ios";
+			target = E12FBC2C5A8D36922AB6E6B285E95EF5 /* zxcvbn-ios */;
+			targetProxy = 5E826DAA52A611C38260EE21059C156B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		20DC42218893B0549AABDCC8050C5862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F93D1497811B0C25A954F6F5535339C9 /* zxcvbn-ios.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/zxcvbn-ios/zxcvbn-ios-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/zxcvbn-ios/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/zxcvbn-ios/zxcvbn-ios.modulemap";
+				PRODUCT_NAME = zxcvbn_ios;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		22C075041A94E9FC36DE8B4828FF033F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB97E8A27010C4006053C68CECDFB55 /* Pods-MedableSandboxUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MedableSandboxUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MedableSandboxUITests/Pods-MedableSandboxUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MedableSandboxUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3F310DA0BF311B6EE57DFEA9AAE037FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACB227FD30FED41EF8DF496056791AA7 /* Pods-MedableSandboxTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MedableSandboxTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MedableSandboxTests/Pods-MedableSandboxTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MedableSandboxTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E4CE1F93EC599743846AEABA3A116BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E998D8A70E09D33FF27F37764C943A6 /* Pods-MedableSandbox.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MedableSandbox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MedableSandbox/Pods-MedableSandbox.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MedableSandbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		64409E341F3812D4BDF319F3E5B2B4FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CBA0216333AC1A6314E7224B5A4A185 /* Pods-MedableSandboxTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MedableSandboxTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MedableSandboxTests/Pods-MedableSandboxTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MedableSandboxTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DB494724864D42D6F6B937204E639BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F93D1497811B0C25A954F6F5535339C9 /* zxcvbn-ios.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/zxcvbn-ios/zxcvbn-ios-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/zxcvbn-ios/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/zxcvbn-ios/zxcvbn-ios.modulemap";
+				PRODUCT_NAME = zxcvbn_ios;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DB87F81B59946BBFF3E9257C51EB0711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0961F47CE2B724F17F315A967311229 /* Pods-MedableSandbox.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MedableSandbox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MedableSandbox/Pods-MedableSandbox.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MedableSandbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED15464D668CDDC0BF23893739A76831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C837407CFB6406003A8A6F0AD3596A2 /* Pods-MedableSandboxUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MedableSandboxUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MedableSandboxUITests/Pods-MedableSandboxUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MedableSandboxUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07C1056AA53A9716050D02568C08CE40 /* Build configuration list for PBXNativeTarget "Pods-MedableSandboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F310DA0BF311B6EE57DFEA9AAE037FD /* Debug */,
+				64409E341F3812D4BDF319F3E5B2B4FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		701C7602FE4B1C3F0F2B3146C5968245 /* Build configuration list for PBXNativeTarget "zxcvbn-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB494724864D42D6F6B937204E639BCB /* Debug */,
+				20DC42218893B0549AABDCC8050C5862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		991DC0998292295EF30E7652F3A3D0A7 /* Build configuration list for PBXNativeTarget "Pods-MedableSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB87F81B59946BBFF3E9257C51EB0711 /* Debug */,
+				5E4CE1F93EC599743846AEABA3A116BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2E312F415D93A69C786C84932A2045E /* Build configuration list for PBXNativeTarget "Pods-MedableSandboxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED15464D668CDDC0BF23893739A76831 /* Debug */,
+				22C075041A94E9FC36DE8B4828FF033F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
