@@ -14,6 +14,9 @@
 		3A3C409F2087C76B0082A44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3C409D2087C76B0082A44C /* LaunchScreen.storyboard */; };
 		3A3C40AA2087C76B0082A44C /* MedableSandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C40A92087C76B0082A44C /* MedableSandboxTests.swift */; };
 		3A3C40B52087C76B0082A44C /* MedableSandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C40B42087C76B0082A44C /* MedableSandboxUITests.swift */; };
+		7BF20CF9CFCE5BF71F40AC21 /* Pods_MedableSandboxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF0307B274C9732E8E7CD78 /* Pods_MedableSandboxTests.framework */; };
+		A284A8543CC8A7C29E803A87 /* Pods_MedableSandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02BA44C3C91A83A674CA092D /* Pods_MedableSandbox.framework */; };
+		B31C2F0A369AA111F2560887 /* Pods_MedableSandboxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D9F649C54FB4D0BCAB80F7 /* Pods_MedableSandboxUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02BA44C3C91A83A674CA092D /* Pods_MedableSandbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedableSandbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10D9F649C54FB4D0BCAB80F7 /* Pods_MedableSandboxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedableSandboxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F5C7D1704B882DA2148D30 /* Pods-MedableSandboxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedableSandboxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedableSandboxTests/Pods-MedableSandboxTests.release.xcconfig"; sourceTree = "<group>"; };
 		3A3C40912087C76B0082A44C /* MedableSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedableSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3C40942087C76B0082A44C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A3C40962087C76B0082A44C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,13 @@
 		3A3C40B02087C76B0082A44C /* MedableSandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedableSandboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3C40B42087C76B0082A44C /* MedableSandboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedableSandboxUITests.swift; sourceTree = "<group>"; };
 		3A3C40B62087C76B0082A44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A3C40C22087D9860082A44C /* MedableSandbox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedableSandbox-Bridging-Header.h"; sourceTree = "<group>"; };
+		9C50127B52C6907D1916C8AF /* Pods-MedableSandboxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedableSandboxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedableSandboxTests/Pods-MedableSandboxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C16F80FD176529B01107E39E /* Pods-MedableSandboxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedableSandboxUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedableSandboxUITests/Pods-MedableSandboxUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DAF385EDE5A0FA85B0AB2FF7 /* Pods-MedableSandboxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedableSandboxUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedableSandboxUITests/Pods-MedableSandboxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DDA7A47772A4E480982BA84D /* Pods-MedableSandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedableSandbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedableSandbox/Pods-MedableSandbox.debug.xcconfig"; sourceTree = "<group>"; };
+		EFF0307B274C9732E8E7CD78 /* Pods_MedableSandboxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedableSandboxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11807F3AC5FE6AB66EB63D9 /* Pods-MedableSandbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedableSandbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedableSandbox/Pods-MedableSandbox.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A284A8543CC8A7C29E803A87 /* Pods_MedableSandbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF20CF9CFCE5BF71F40AC21 /* Pods_MedableSandboxTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31C2F0A369AA111F2560887 /* Pods_MedableSandboxUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +93,13 @@
 		3A3C40882087C76A0082A44C = {
 			isa = PBXGroup;
 			children = (
+				3A3C40C22087D9860082A44C /* MedableSandbox-Bridging-Header.h */,
 				3A3C40932087C76B0082A44C /* MedableSandbox */,
 				3A3C40A82087C76B0082A44C /* MedableSandboxTests */,
 				3A3C40B32087C76B0082A44C /* MedableSandboxUITests */,
 				3A3C40922087C76B0082A44C /* Products */,
+				FC11C280D6331A57479C7E25 /* Pods */,
+				8C4E706C7A87460924447A25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +144,29 @@
 			path = MedableSandboxUITests;
 			sourceTree = "<group>";
 		};
+		8C4E706C7A87460924447A25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02BA44C3C91A83A674CA092D /* Pods_MedableSandbox.framework */,
+				EFF0307B274C9732E8E7CD78 /* Pods_MedableSandboxTests.framework */,
+				10D9F649C54FB4D0BCAB80F7 /* Pods_MedableSandboxUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC11C280D6331A57479C7E25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7A47772A4E480982BA84D /* Pods-MedableSandbox.debug.xcconfig */,
+				F11807F3AC5FE6AB66EB63D9 /* Pods-MedableSandbox.release.xcconfig */,
+				9C50127B52C6907D1916C8AF /* Pods-MedableSandboxTests.debug.xcconfig */,
+				18F5C7D1704B882DA2148D30 /* Pods-MedableSandboxTests.release.xcconfig */,
+				DAF385EDE5A0FA85B0AB2FF7 /* Pods-MedableSandboxUITests.debug.xcconfig */,
+				C16F80FD176529B01107E39E /* Pods-MedableSandboxUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A3C40B92087C76B0082A44C /* Build configuration list for PBXNativeTarget "MedableSandbox" */;
 			buildPhases = (
+				A563DB832A1CD63B9944720C /* [CP] Check Pods Manifest.lock */,
 				3A3C408D2087C76B0082A44C /* Sources */,
 				3A3C408E2087C76B0082A44C /* Frameworks */,
 				3A3C408F2087C76B0082A44C /* Resources */,
+				17570BFFCB9DC1FDD5D27A2F /* [CP] Embed Pods Frameworks */,
+				285DD906AC90C53CEDC480E2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +194,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A3C40BC2087C76B0082A44C /* Build configuration list for PBXNativeTarget "MedableSandboxTests" */;
 			buildPhases = (
+				CFBA89D02A084EB0903474FC /* [CP] Check Pods Manifest.lock */,
 				3A3C40A12087C76B0082A44C /* Sources */,
 				3A3C40A22087C76B0082A44C /* Frameworks */,
 				3A3C40A32087C76B0082A44C /* Resources */,
+				8648D377614F8A0F4C49C3A1 /* [CP] Embed Pods Frameworks */,
+				EC94199E308CC710CF28D793 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A3C40BF2087C76B0082A44C /* Build configuration list for PBXNativeTarget "MedableSandboxUITests" */;
 			buildPhases = (
+				836671E51BE2058C846D99F3 /* [CP] Check Pods Manifest.lock */,
 				3A3C40AC2087C76B0082A44C /* Sources */,
 				3A3C40AD2087C76B0082A44C /* Frameworks */,
 				3A3C40AE2087C76B0082A44C /* Resources */,
+				DD5A05DD88340D5736319D82 /* [CP] Embed Pods Frameworks */,
+				A69A082924881932A97E21A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,7 +244,7 @@
 				TargetAttributes = {
 					3A3C40902087C76B0082A44C = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					3A3C40A42087C76B0082A44C = {
 						CreatedOnToolsVersion = 9.2;
@@ -253,6 +304,153 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17570BFFCB9DC1FDD5D27A2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedableSandbox/Pods-MedableSandbox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		285DD906AC90C53CEDC480E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedableSandbox/Pods-MedableSandbox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		836671E51BE2058C846D99F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedableSandboxUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8648D377614F8A0F4C49C3A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedableSandboxTests/Pods-MedableSandboxTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A563DB832A1CD63B9944720C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedableSandbox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A69A082924881932A97E21A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedableSandboxUITests/Pods-MedableSandboxUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFBA89D02A084EB0903474FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedableSandboxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD5A05DD88340D5736319D82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedableSandboxUITests/Pods-MedableSandboxUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC94199E308CC710CF28D793 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedableSandboxTests/Pods-MedableSandboxTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A3C408D2087C76B0082A44C /* Sources */ = {
@@ -424,14 +622,17 @@
 		};
 		3A3C40BA2087C76B0082A44C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDA7A47772A4E480982BA84D /* Pods-MedableSandbox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QT5VQXC56T;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MedableSandbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.upenn.MedableSandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MedableSandbox-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -439,14 +640,17 @@
 		};
 		3A3C40BB2087C76B0082A44C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F11807F3AC5FE6AB66EB63D9 /* Pods-MedableSandbox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QT5VQXC56T;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MedableSandbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.upenn.MedableSandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MedableSandbox-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,6 +658,7 @@
 		};
 		3A3C40BD2087C76B0082A44C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C50127B52C6907D1916C8AF /* Pods-MedableSandboxTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +676,7 @@
 		};
 		3A3C40BE2087C76B0082A44C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18F5C7D1704B882DA2148D30 /* Pods-MedableSandboxTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +694,7 @@
 		};
 		3A3C40C02087C76B0082A44C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAF385EDE5A0FA85B0AB2FF7 /* Pods-MedableSandboxUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +711,7 @@
 		};
 		3A3C40C12087C76B0082A44C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C16F80FD176529B01107E39E /* Pods-MedableSandboxUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
