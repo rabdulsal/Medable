@@ -14,6 +14,7 @@
 		3A3C409F2087C76B0082A44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3C409D2087C76B0082A44C /* LaunchScreen.storyboard */; };
 		3A3C40AA2087C76B0082A44C /* MedableSandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C40A92087C76B0082A44C /* MedableSandboxTests.swift */; };
 		3A3C40B52087C76B0082A44C /* MedableSandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C40B42087C76B0082A44C /* MedableSandboxUITests.swift */; };
+		3A7351E5208F9CEF002B98C4 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7351E4208F9CEF002B98C4 /* LoginTableViewController.swift */; };
 		7BF20CF9CFCE5BF71F40AC21 /* Pods_MedableSandboxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF0307B274C9732E8E7CD78 /* Pods_MedableSandboxTests.framework */; };
 		A284A8543CC8A7C29E803A87 /* Pods_MedableSandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02BA44C3C91A83A674CA092D /* Pods_MedableSandbox.framework */; };
 		B31C2F0A369AA111F2560887 /* Pods_MedableSandboxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D9F649C54FB4D0BCAB80F7 /* Pods_MedableSandboxUITests.framework */; };
@@ -54,6 +55,7 @@
 		3A3C40B42087C76B0082A44C /* MedableSandboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedableSandboxUITests.swift; sourceTree = "<group>"; };
 		3A3C40B62087C76B0082A44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A3C40C22087D9860082A44C /* MedableSandbox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedableSandbox-Bridging-Header.h"; sourceTree = "<group>"; };
+		3A7351E4208F9CEF002B98C4 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		9C50127B52C6907D1916C8AF /* Pods-MedableSandboxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedableSandboxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedableSandboxTests/Pods-MedableSandboxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C16F80FD176529B01107E39E /* Pods-MedableSandboxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedableSandboxUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedableSandboxUITests/Pods-MedableSandboxUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DAF385EDE5A0FA85B0AB2FF7 /* Pods-MedableSandboxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedableSandboxUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedableSandboxUITests/Pods-MedableSandboxUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				3A3C409B2087C76B0082A44C /* Assets.xcassets */,
 				3A3C409D2087C76B0082A44C /* LaunchScreen.storyboard */,
 				3A3C40A02087C76B0082A44C /* Info.plist */,
+				3A7351E4208F9CEF002B98C4 /* LoginTableViewController.swift */,
 			);
 			path = MedableSandbox;
 			sourceTree = "<group>";
@@ -313,10 +316,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MedableSandbox/Pods-MedableSandbox-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS/libPhoneNumber_iOS.framework",
 				"${BUILT_PRODUCTS_DIR}/zxcvbn-ios/zxcvbn_ios.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libPhoneNumber_iOS.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/zxcvbn_ios.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +467,7 @@
 			files = (
 				3A3C40972087C76B0082A44C /* RegistrationTableViewController.swift in Sources */,
 				3A3C40952087C76B0082A44C /* AppDelegate.swift in Sources */,
+				3A7351E5208F9CEF002B98C4 /* LoginTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

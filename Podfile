@@ -8,6 +8,7 @@ target 'MedableSandbox' do
   # Pods for MedableSandbox
   pod 'Medable'
   pod 'zxcvbn-ios'
+  pod 'libPhoneNumber-iOS'
 
   target 'MedableSandboxTests' do
     inherit! :search_paths

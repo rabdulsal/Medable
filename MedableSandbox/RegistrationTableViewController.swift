@@ -8,6 +8,7 @@
 
 import UIKit
 import zxcvbn_ios
+import libPhoneNumber_iOS
 
 class RegistrationTableViewController: UITableViewController {
     
@@ -22,6 +23,7 @@ class RegistrationTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.passwordField.delegate = self
+        self.title = "Registration"
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,11 +32,24 @@ class RegistrationTableViewController: UITableViewController {
     }
 
     @IBAction func submitPressed(_ sender: UIBarButtonItem) {
-        Medable.client().registerAccount(withFirstName: "", lastName: "", email: "", mobile: "", password: "", gender: nil, dob: nil, role: nil, profileInfo: nil, thumbImage: nil, timeZone: nil, customPropValues: nil) { (account, error) in
-            //
+        
+        if DBZxcvbn().passwordStrength(passwordField.text!).score < 2 {
+            print("The password is not strong enough")
+            return
         }
+        
+        let phoneUtil = NBPhoneNumberUtil()
+        do {
+            let myNumber = try phoneUtil.parse(mobileNumberField.text!, defaultRegion: "US")
+            if !phoneUtil.isValidNumber(myNumber) {
+                return
+            }
+        } catch let error as NSError {
+            print(error)
+        }
+        
+        self.register()
     }
-    
 }
 
 extension RegistrationTableViewController : UITextFieldDelegate {
@@ -44,6 +59,28 @@ extension RegistrationTableViewController : UITextFieldDelegate {
         let password = (textField.text! as NSString).replacingCharacters(in: range, with: string)
         self.passwordStrengthMeter.scorePassword(password)
         return true
+    }
+}
+
+private extension RegistrationTableViewController {
+    
+    func register() {
+        Medable.client().registerAccount(
+            withFirstName: self.firstNameField.text!,
+            lastName: self.lastNameField.text!,
+            email: self.emailAddressField.text!,
+            mobile: self.mobileNumberField.text!,
+            password: self.passwordField.text!,
+            gender: nil,
+            dob: nil,
+            role: nil,
+            profileInfo: nil,
+            thumbImage: nil,
+            timeZone: nil,
+            customPropValues: nil) { (account, error) in
+                print("Callback returns account: \(account)")
+                print("Callback returns error: \(error)")
+        }
     }
 }
 
