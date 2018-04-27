@@ -15,6 +15,13 @@
 		3A3C40AA2087C76B0082A44C /* MedableSandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C40A92087C76B0082A44C /* MedableSandboxTests.swift */; };
 		3A3C40B52087C76B0082A44C /* MedableSandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C40B42087C76B0082A44C /* MedableSandboxUITests.swift */; };
 		3A7351E5208F9CEF002B98C4 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7351E4208F9CEF002B98C4 /* LoginTableViewController.swift */; };
+		3A7351E72093A8C7002B98C4 /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7351E62093A8C7002B98C4 /* ActivityService.swift */; };
+		3A7352042093B068002B98C4 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7352012093B037002B98C4 /* ResearchKit.framework */; };
+		3A7352052093B068002B98C4 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7352012093B037002B98C4 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A73520A2093B5A5002B98C4 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7352092093B5A5002B98C4 /* HealthKit.framework */; };
+		3A7352152093B74C002B98C4 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7352122093B63A002B98C4 /* CareKit.framework */; };
+		3A7352162093B74C002B98C4 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7352122093B63A002B98C4 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A73521A2093C3CC002B98C4 /* CarePlanStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7352192093C3CB002B98C4 /* CarePlanStoreManager.swift */; };
 		7BF20CF9CFCE5BF71F40AC21 /* Pods_MedableSandboxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF0307B274C9732E8E7CD78 /* Pods_MedableSandboxTests.framework */; };
 		A284A8543CC8A7C29E803A87 /* Pods_MedableSandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02BA44C3C91A83A674CA092D /* Pods_MedableSandbox.framework */; };
 		B31C2F0A369AA111F2560887 /* Pods_MedableSandboxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D9F649C54FB4D0BCAB80F7 /* Pods_MedableSandboxUITests.framework */; };
@@ -35,7 +42,64 @@
 			remoteGlobalIDString = 3A3C40902087C76B0082A44C;
 			remoteInfo = MedableSandbox;
 		};
+		3A7352002093B037002B98C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A7351F82093B037002B98C4 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		3A7352022093B037002B98C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A7351F82093B037002B98C4 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		3A7352062093B068002B98C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A7351F82093B037002B98C4 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		3A7352112093B63A002B98C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A73520B2093B63A002B98C4 /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+		3A7352132093B63A002B98C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A73520B2093B63A002B98C4 /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5C41C4F04EC00DD65FF;
+			remoteInfo = CareKitTests;
+		};
+		3A7352172093B74C002B98C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A73520B2093B63A002B98C4 /* CareKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8605A5B91C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A7351F62093ADFA002B98C4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3A7352162093B74C002B98C4 /* CareKit.framework in Embed Frameworks */,
+				3A7352052093B068002B98C4 /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		02BA44C3C91A83A674CA092D /* Pods_MedableSandbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedableSandbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +120,11 @@
 		3A3C40B62087C76B0082A44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A3C40C22087D9860082A44C /* MedableSandbox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedableSandbox-Bridging-Header.h"; sourceTree = "<group>"; };
 		3A7351E4208F9CEF002B98C4 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
+		3A7351E62093A8C7002B98C4 /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
+		3A7351F82093B037002B98C4 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../Desktop/ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		3A7352092093B5A5002B98C4 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		3A73520B2093B63A002B98C4 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../Desktop/careKit/CareKit.xcodeproj; sourceTree = "<group>"; };
+		3A7352192093C3CB002B98C4 /* CarePlanStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanStoreManager.swift; sourceTree = "<group>"; };
 		9C50127B52C6907D1916C8AF /* Pods-MedableSandboxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedableSandboxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedableSandboxTests/Pods-MedableSandboxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C16F80FD176529B01107E39E /* Pods-MedableSandboxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedableSandboxUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedableSandboxUITests/Pods-MedableSandboxUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DAF385EDE5A0FA85B0AB2FF7 /* Pods-MedableSandboxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedableSandboxUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedableSandboxUITests/Pods-MedableSandboxUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,7 +138,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A7352152093B74C002B98C4 /* CareKit.framework in Frameworks */,
+				3A73520A2093B5A5002B98C4 /* HealthKit.framework in Frameworks */,
 				A284A8543CC8A7C29E803A87 /* Pods_MedableSandbox.framework in Frameworks */,
+				3A7352042093B068002B98C4 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +197,8 @@
 				3A3C409D2087C76B0082A44C /* LaunchScreen.storyboard */,
 				3A3C40A02087C76B0082A44C /* Info.plist */,
 				3A7351E4208F9CEF002B98C4 /* LoginTableViewController.swift */,
+				3A7351E62093A8C7002B98C4 /* ActivityService.swift */,
+				3A7352192093C3CB002B98C4 /* CarePlanStoreManager.swift */,
 			);
 			path = MedableSandbox;
 			sourceTree = "<group>";
@@ -147,9 +221,30 @@
 			path = MedableSandboxUITests;
 			sourceTree = "<group>";
 		};
+		3A7351F92093B037002B98C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A7352012093B037002B98C4 /* ResearchKit.framework */,
+				3A7352032093B037002B98C4 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A73520C2093B63A002B98C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A7352122093B63A002B98C4 /* CareKit.framework */,
+				3A7352142093B63A002B98C4 /* CareKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8C4E706C7A87460924447A25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A73520B2093B63A002B98C4 /* CareKit.xcodeproj */,
+				3A7352092093B5A5002B98C4 /* HealthKit.framework */,
+				3A7351F82093B037002B98C4 /* ResearchKit.xcodeproj */,
 				02BA44C3C91A83A674CA092D /* Pods_MedableSandbox.framework */,
 				EFF0307B274C9732E8E7CD78 /* Pods_MedableSandboxTests.framework */,
 				10D9F649C54FB4D0BCAB80F7 /* Pods_MedableSandboxUITests.framework */,
@@ -183,10 +278,13 @@
 				3A3C408F2087C76B0082A44C /* Resources */,
 				17570BFFCB9DC1FDD5D27A2F /* [CP] Embed Pods Frameworks */,
 				285DD906AC90C53CEDC480E2 /* [CP] Copy Pods Resources */,
+				3A7351F62093ADFA002B98C4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3A7352072093B068002B98C4 /* PBXTargetDependency */,
+				3A7352182093B74C002B98C4 /* PBXTargetDependency */,
 			);
 			name = MedableSandbox;
 			productName = MedableSandbox;
@@ -247,7 +345,7 @@
 				TargetAttributes = {
 					3A3C40902087C76B0082A44C = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					3A3C40A42087C76B0082A44C = {
 						CreatedOnToolsVersion = 9.2;
@@ -272,6 +370,16 @@
 			mainGroup = 3A3C40882087C76A0082A44C;
 			productRefGroup = 3A3C40922087C76B0082A44C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3A73520C2093B63A002B98C4 /* Products */;
+					ProjectRef = 3A73520B2093B63A002B98C4 /* CareKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 3A7351F92093B037002B98C4 /* Products */;
+					ProjectRef = 3A7351F82093B037002B98C4 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3A3C40902087C76B0082A44C /* MedableSandbox */,
@@ -280,6 +388,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3A7352012093B037002B98C4 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 3A7352002093B037002B98C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3A7352032093B037002B98C4 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 3A7352022093B037002B98C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3A7352122093B63A002B98C4 /* CareKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CareKit.framework;
+			remoteRef = 3A7352112093B63A002B98C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3A7352142093B63A002B98C4 /* CareKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareKitTests.xctest;
+			remoteRef = 3A7352132093B63A002B98C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3A3C408F2087C76B0082A44C /* Resources */ = {
@@ -466,7 +605,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A3C40972087C76B0082A44C /* RegistrationTableViewController.swift in Sources */,
+				3A73521A2093C3CC002B98C4 /* CarePlanStoreManager.swift in Sources */,
 				3A3C40952087C76B0082A44C /* AppDelegate.swift in Sources */,
+				3A7351E72093A8C7002B98C4 /* ActivityService.swift in Sources */,
 				3A7351E5208F9CEF002B98C4 /* LoginTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +640,16 @@
 			isa = PBXTargetDependency;
 			target = 3A3C40902087C76B0082A44C /* MedableSandbox */;
 			targetProxy = 3A3C40B12087C76B0082A44C /* PBXContainerItemProxy */;
+		};
+		3A7352072093B068002B98C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 3A7352062093B068002B98C4 /* PBXContainerItemProxy */;
+		};
+		3A7352182093B74C002B98C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CareKit;
+			targetProxy = 3A7352172093B74C002B98C4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -633,10 +784,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DDA7A47772A4E480982BA84D /* Pods-MedableSandbox.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QT5VQXC56T;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MedableSandbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.upenn.MedableSandbox;
@@ -652,10 +804,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F11807F3AC5FE6AB66EB63D9 /* Pods-MedableSandbox.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QT5VQXC56T;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MedableSandbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.upenn.MedableSandbox;

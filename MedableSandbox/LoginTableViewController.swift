@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CareKit
 
 class LoginTableViewController : UITableViewController {
     
@@ -82,8 +83,19 @@ private extension LoginTableViewController {
             password: self.passwordField.text!,
             verificationToken: verificationCode,
             singleUse: false) { (account, error) in
+                
                 print("Callback returns account: \(account)")
                 print("Callback returns error: \(error)")
+                
+                if error == nil {
+                    let activity = ActivityService()
+                    activity.addIbuprofenActivity()
+                    
+                    let viewController = OCKCareCardViewController(carePlanStore: activity.carePlanStoreManager.store)
+                    let navController = UINavigationController(rootViewController: viewController)
+                    self.present(navController, animated: true, completion: nil)
+                }
+                
         }
     }
 }
