@@ -93,6 +93,7 @@ private extension LoginTableViewController {
                     
                     let viewController = OCKCareCardViewController(carePlanStore: activity.carePlanStoreManager.store)
                     let navController = UINavigationController(rootViewController: viewController)
+                    
                     self.present(navController, animated: true, completion: nil)
                 }
                 

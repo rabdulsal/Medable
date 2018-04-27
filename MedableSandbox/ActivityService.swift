@@ -12,7 +12,7 @@ import CareKit
 struct IbuprofenActivity {
     
     let identifier = "ibuprofenMedication"
-    let groupIdentifier = "painMedications"
+    let groupIdentifier = "Pain Medications"
     let title = "Ibuprofen"
     let text = "200mg"
     let tint = UIColor.blue
@@ -32,7 +32,7 @@ class ActivityService : NSObject {
             withIdentifier: ibuprofenActivity.identifier,
             groupIdentifier: ibuprofenActivity.groupIdentifier,
             title: ibuprofenActivity.title,
-            text: ibuprofenActivity.title,
+            text: ibuprofenActivity.text,
             tintColor: ibuprofenActivity.tint,
             instructions: ibuprofenActivity.instructions,
             imageURL: ibuprofenActivity.imageURL,
