@@ -16,12 +16,14 @@
 		3A3C40B52087C76B0082A44C /* MedableSandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C40B42087C76B0082A44C /* MedableSandboxUITests.swift */; };
 		3A7351E5208F9CEF002B98C4 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7351E4208F9CEF002B98C4 /* LoginTableViewController.swift */; };
 		3A7351E72093A8C7002B98C4 /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7351E62093A8C7002B98C4 /* ActivityService.swift */; };
-		3A7352042093B068002B98C4 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7352012093B037002B98C4 /* ResearchKit.framework */; };
-		3A7352052093B068002B98C4 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7352012093B037002B98C4 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3A73520A2093B5A5002B98C4 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7352092093B5A5002B98C4 /* HealthKit.framework */; };
-		3A7352152093B74C002B98C4 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7352122093B63A002B98C4 /* CareKit.framework */; };
-		3A7352162093B74C002B98C4 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7352122093B63A002B98C4 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3A73521A2093C3CC002B98C4 /* CarePlanStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7352192093C3CB002B98C4 /* CarePlanStoreManager.swift */; };
+		4C13A7B52096314700C04EB4 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C13A7B2209630F600C04EB4 /* CareKit.framework */; };
+		4C13A7B62096314700C04EB4 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C13A7B2209630F600C04EB4 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4C13A7B92096315600C04EB4 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C13A7A820962B6800C04EB4 /* ResearchKit.framework */; };
+		4C13A7BA2096315600C04EB4 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C13A7A820962B6800C04EB4 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4C13A7BF209632C600C04EB4 /* NSDateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C13A7BD209632C500C04EB4 /* NSDateComponents.swift */; };
+		4C13A7C0209632C600C04EB4 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C13A7BE209632C600C04EB4 /* UIColor.swift */; };
 		7BF20CF9CFCE5BF71F40AC21 /* Pods_MedableSandboxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF0307B274C9732E8E7CD78 /* Pods_MedableSandboxTests.framework */; };
 		A284A8543CC8A7C29E803A87 /* Pods_MedableSandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02BA44C3C91A83A674CA092D /* Pods_MedableSandbox.framework */; };
 		B31C2F0A369AA111F2560887 /* Pods_MedableSandboxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D9F649C54FB4D0BCAB80F7 /* Pods_MedableSandboxUITests.framework */; };
@@ -42,47 +44,47 @@
 			remoteGlobalIDString = 3A3C40902087C76B0082A44C;
 			remoteInfo = MedableSandbox;
 		};
-		3A7352002093B037002B98C4 /* PBXContainerItemProxy */ = {
+		4C13A7A720962B6800C04EB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3A7351F82093B037002B98C4 /* ResearchKit.xcodeproj */;
+			containerPortal = 4C13A7A120962B6600C04EB4 /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B183A5951A8535D100C76870;
 			remoteInfo = ResearchKit;
 		};
-		3A7352022093B037002B98C4 /* PBXContainerItemProxy */ = {
+		4C13A7A920962B6800C04EB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3A7351F82093B037002B98C4 /* ResearchKit.xcodeproj */;
+			containerPortal = 4C13A7A120962B6600C04EB4 /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
 			remoteInfo = ResearchKitTests;
 		};
-		3A7352062093B068002B98C4 /* PBXContainerItemProxy */ = {
+		4C13A7B1209630F600C04EB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3A7351F82093B037002B98C4 /* ResearchKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B183A4731A8535D100C76870;
-			remoteInfo = ResearchKit;
-		};
-		3A7352112093B63A002B98C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3A73520B2093B63A002B98C4 /* CareKit.xcodeproj */;
+			containerPortal = 4C13A7AB209630F500C04EB4 /* CareKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
 			remoteInfo = CareKit;
 		};
-		3A7352132093B63A002B98C4 /* PBXContainerItemProxy */ = {
+		4C13A7B3209630F600C04EB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3A73520B2093B63A002B98C4 /* CareKit.xcodeproj */;
+			containerPortal = 4C13A7AB209630F500C04EB4 /* CareKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8605A5C41C4F04EC00DD65FF;
 			remoteInfo = CareKitTests;
 		};
-		3A7352172093B74C002B98C4 /* PBXContainerItemProxy */ = {
+		4C13A7B72096314700C04EB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3A73520B2093B63A002B98C4 /* CareKit.xcodeproj */;
+			containerPortal = 4C13A7AB209630F500C04EB4 /* CareKit.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 8605A5B91C4F04EC00DD65FF;
 			remoteInfo = CareKit;
+		};
+		4C13A7BB2096315600C04EB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C13A7A120962B6600C04EB4 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -93,8 +95,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3A7352162093B74C002B98C4 /* CareKit.framework in Embed Frameworks */,
-				3A7352052093B068002B98C4 /* ResearchKit.framework in Embed Frameworks */,
+				4C13A7BA2096315600C04EB4 /* ResearchKit.framework in Embed Frameworks */,
+				4C13A7B62096314700C04EB4 /* CareKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,10 +123,12 @@
 		3A3C40C22087D9860082A44C /* MedableSandbox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedableSandbox-Bridging-Header.h"; sourceTree = "<group>"; };
 		3A7351E4208F9CEF002B98C4 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		3A7351E62093A8C7002B98C4 /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
-		3A7351F82093B037002B98C4 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../Desktop/ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
 		3A7352092093B5A5002B98C4 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		3A73520B2093B63A002B98C4 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../Desktop/careKit/CareKit.xcodeproj; sourceTree = "<group>"; };
 		3A7352192093C3CB002B98C4 /* CarePlanStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanStoreManager.swift; sourceTree = "<group>"; };
+		4C13A7A120962B6600C04EB4 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../../Downloads/ZombieKit Part 1 Starter/Libraries/ResearchKit/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		4C13A7AB209630F500C04EB4 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../../carekit/CareKit.xcodeproj; sourceTree = "<group>"; };
+		4C13A7BD209632C500C04EB4 /* NSDateComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDateComponents.swift; sourceTree = "<group>"; };
+		4C13A7BE209632C600C04EB4 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		9C50127B52C6907D1916C8AF /* Pods-MedableSandboxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedableSandboxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedableSandboxTests/Pods-MedableSandboxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C16F80FD176529B01107E39E /* Pods-MedableSandboxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedableSandboxUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedableSandboxUITests/Pods-MedableSandboxUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DAF385EDE5A0FA85B0AB2FF7 /* Pods-MedableSandboxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedableSandboxUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedableSandboxUITests/Pods-MedableSandboxUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -138,10 +142,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A7352152093B74C002B98C4 /* CareKit.framework in Frameworks */,
+				4C13A7B52096314700C04EB4 /* CareKit.framework in Frameworks */,
 				3A73520A2093B5A5002B98C4 /* HealthKit.framework in Frameworks */,
+				4C13A7B92096315600C04EB4 /* ResearchKit.framework in Frameworks */,
 				A284A8543CC8A7C29E803A87 /* Pods_MedableSandbox.framework in Frameworks */,
-				3A7352042093B068002B98C4 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +200,8 @@
 				3A3C409B2087C76B0082A44C /* Assets.xcassets */,
 				3A3C409D2087C76B0082A44C /* LaunchScreen.storyboard */,
 				3A3C40A02087C76B0082A44C /* Info.plist */,
+				4C13A7BD209632C500C04EB4 /* NSDateComponents.swift */,
+				4C13A7BE209632C600C04EB4 /* UIColor.swift */,
 				3A7351E4208F9CEF002B98C4 /* LoginTableViewController.swift */,
 				3A7351E62093A8C7002B98C4 /* ActivityService.swift */,
 				3A7352192093C3CB002B98C4 /* CarePlanStoreManager.swift */,
@@ -221,20 +227,20 @@
 			path = MedableSandboxUITests;
 			sourceTree = "<group>";
 		};
-		3A7351F92093B037002B98C4 /* Products */ = {
+		4C13A7A220962B6600C04EB4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A7352012093B037002B98C4 /* ResearchKit.framework */,
-				3A7352032093B037002B98C4 /* ResearchKitTests.xctest */,
+				4C13A7A820962B6800C04EB4 /* ResearchKit.framework */,
+				4C13A7AA20962B6800C04EB4 /* ResearchKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3A73520C2093B63A002B98C4 /* Products */ = {
+		4C13A7AC209630F500C04EB4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A7352122093B63A002B98C4 /* CareKit.framework */,
-				3A7352142093B63A002B98C4 /* CareKitTests.xctest */,
+				4C13A7B2209630F600C04EB4 /* CareKit.framework */,
+				4C13A7B4209630F600C04EB4 /* CareKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,9 +248,9 @@
 		8C4E706C7A87460924447A25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3A73520B2093B63A002B98C4 /* CareKit.xcodeproj */,
+				4C13A7AB209630F500C04EB4 /* CareKit.xcodeproj */,
+				4C13A7A120962B6600C04EB4 /* ResearchKit.xcodeproj */,
 				3A7352092093B5A5002B98C4 /* HealthKit.framework */,
-				3A7351F82093B037002B98C4 /* ResearchKit.xcodeproj */,
 				02BA44C3C91A83A674CA092D /* Pods_MedableSandbox.framework */,
 				EFF0307B274C9732E8E7CD78 /* Pods_MedableSandboxTests.framework */,
 				10D9F649C54FB4D0BCAB80F7 /* Pods_MedableSandboxUITests.framework */,
@@ -283,8 +289,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				3A7352072093B068002B98C4 /* PBXTargetDependency */,
-				3A7352182093B74C002B98C4 /* PBXTargetDependency */,
+				4C13A7B82096314700C04EB4 /* PBXTargetDependency */,
+				4C13A7BC2096315600C04EB4 /* PBXTargetDependency */,
 			);
 			name = MedableSandbox;
 			productName = MedableSandbox;
@@ -372,12 +378,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 3A73520C2093B63A002B98C4 /* Products */;
-					ProjectRef = 3A73520B2093B63A002B98C4 /* CareKit.xcodeproj */;
+					ProductGroup = 4C13A7AC209630F500C04EB4 /* Products */;
+					ProjectRef = 4C13A7AB209630F500C04EB4 /* CareKit.xcodeproj */;
 				},
 				{
-					ProductGroup = 3A7351F92093B037002B98C4 /* Products */;
-					ProjectRef = 3A7351F82093B037002B98C4 /* ResearchKit.xcodeproj */;
+					ProductGroup = 4C13A7A220962B6600C04EB4 /* Products */;
+					ProjectRef = 4C13A7A120962B6600C04EB4 /* ResearchKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -390,32 +396,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3A7352012093B037002B98C4 /* ResearchKit.framework */ = {
+		4C13A7A820962B6800C04EB4 /* ResearchKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ResearchKit.framework;
-			remoteRef = 3A7352002093B037002B98C4 /* PBXContainerItemProxy */;
+			remoteRef = 4C13A7A720962B6800C04EB4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3A7352032093B037002B98C4 /* ResearchKitTests.xctest */ = {
+		4C13A7AA20962B6800C04EB4 /* ResearchKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ResearchKitTests.xctest;
-			remoteRef = 3A7352022093B037002B98C4 /* PBXContainerItemProxy */;
+			remoteRef = 4C13A7A920962B6800C04EB4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3A7352122093B63A002B98C4 /* CareKit.framework */ = {
+		4C13A7B2209630F600C04EB4 /* CareKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CareKit.framework;
-			remoteRef = 3A7352112093B63A002B98C4 /* PBXContainerItemProxy */;
+			remoteRef = 4C13A7B1209630F600C04EB4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3A7352142093B63A002B98C4 /* CareKitTests.xctest */ = {
+		4C13A7B4209630F600C04EB4 /* CareKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = CareKitTests.xctest;
-			remoteRef = 3A7352132093B63A002B98C4 /* PBXContainerItemProxy */;
+			remoteRef = 4C13A7B3209630F600C04EB4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -604,6 +610,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C13A7BF209632C600C04EB4 /* NSDateComponents.swift in Sources */,
+				4C13A7C0209632C600C04EB4 /* UIColor.swift in Sources */,
 				3A3C40972087C76B0082A44C /* RegistrationTableViewController.swift in Sources */,
 				3A73521A2093C3CC002B98C4 /* CarePlanStoreManager.swift in Sources */,
 				3A3C40952087C76B0082A44C /* AppDelegate.swift in Sources */,
@@ -641,15 +649,15 @@
 			target = 3A3C40902087C76B0082A44C /* MedableSandbox */;
 			targetProxy = 3A3C40B12087C76B0082A44C /* PBXContainerItemProxy */;
 		};
-		3A7352072093B068002B98C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ResearchKit;
-			targetProxy = 3A7352062093B068002B98C4 /* PBXContainerItemProxy */;
-		};
-		3A7352182093B74C002B98C4 /* PBXTargetDependency */ = {
+		4C13A7B82096314700C04EB4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CareKit;
-			targetProxy = 3A7352172093B74C002B98C4 /* PBXContainerItemProxy */;
+			targetProxy = 4C13A7B72096314700C04EB4 /* PBXContainerItemProxy */;
+		};
+		4C13A7BC2096315600C04EB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 4C13A7BB2096315600C04EB4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
