@@ -9,6 +9,14 @@
 import Foundation
 import CareKit
 
+enum ActivityIdentifier: String {
+    case cardio = "Cardio"
+    case limberUp = "Limber Up"
+    case targetPractice = "Target Practice"
+    case pulse
+    case temperature
+}
+
 struct IbuprofenActivity {
     
     let identifier = "ibuprofenMedication"
@@ -22,6 +30,11 @@ struct IbuprofenActivity {
 
 class ActivityService : NSObject {
     let carePlanStoreManager = CarePlanStoreManager.sharedManager
+    
+    class func dailyScheduleRepeating(occurencesPerDay: UInt) -> OCKCareSchedule {
+        return OCKCareSchedule.dailySchedule(withStartDate: DateComponents.firstDateOfCurrentWeek,
+                                             occurrencesPerDay: occurencesPerDay)
+    }
     
     func addIbuprofenActivity() {
         let startDate = DateComponents(year: 2018, month: 04, day: 22)
@@ -45,4 +58,59 @@ class ActivityService : NSObject {
         }
         
     }
+    
+    func makeActivities() {
+        let cardioActivity = OCKCarePlanActivity(
+            identifier: ActivityIdentifier.cardio.rawValue,
+            groupIdentifier: nil,
+            type: .intervention,
+            title: "Cardio",
+            text: "60 Minutes",
+            tintColor: UIColor.darkOrange(),
+            instructions: "Jog at a moderate pace for an hour. If there isn't an actual one, imagine a horde of zombies behind you.",
+            imageURL: nil,
+            schedule:ActivityService.dailyScheduleRepeating(occurencesPerDay: 2),
+            resultResettable: true,
+            userInfo: nil)
+        
+        self.carePlanStoreManager.store.add(cardioActivity) { (success, error) in
+            // Error checking
+        }
+        
+        let limberUpActivity = OCKCarePlanActivity(
+            identifier: ActivityIdentifier.limberUp.rawValue,
+            groupIdentifier: nil,
+            type: .intervention,
+            title: "Limber Up",
+            text: "Stretch Regularly",
+            tintColor: UIColor.darkOrange(),
+            instructions: "Stretch and warm up muscles in your arms, legs and back before any expected burst of activity. This is especially important if, for example, you're heading down a hill to inspect a Hostess truck.",
+            imageURL: nil,
+            schedule: ActivityService.dailyScheduleRepeating(occurencesPerDay: 6),
+            resultResettable: true,
+            userInfo: nil)
+        
+        self.carePlanStoreManager.store.add(limberUpActivity) { (success, error) in
+            // Error checking
+        }
+        
+        let targetPracticeActivity = OCKCarePlanActivity(
+            identifier: ActivityIdentifier.targetPractice.rawValue,
+            groupIdentifier: nil,
+            type: .intervention,
+            title: "Target Practice",
+            text: nil,
+            tintColor: UIColor.darkOrange(),
+            instructions: "Gather some objects that frustrated you before the apocalypse, like printers and construction barriers. Keep your eyes sharp and your arm steady, and blow as many holes as you can in them for at least five minutes.",
+            imageURL: nil,
+            schedule: ActivityService.dailyScheduleRepeating(occurencesPerDay: 2),
+            resultResettable: true,
+            userInfo: nil)
+        
+        self.carePlanStoreManager.store.add(targetPracticeActivity) { (success, error) in
+            // Error checking
+        }
+    }
+    
+    
 }

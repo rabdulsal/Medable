@@ -63,6 +63,7 @@ class LoginTableViewController : UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Login"
+        self.showCareCard()
     }
     
     @IBAction func submitPressed(_ sender: UIBarButtonItem) {
@@ -98,5 +99,15 @@ private extension LoginTableViewController {
                 }
                 
         }
+    }
+    
+    func showCareCard() {
+        let activity = ActivityService()
+        activity.addIbuprofenActivity()
+//        activity.makeActivities()
+        let viewController = OCKCareCardViewController(carePlanStore: activity.carePlanStoreManager.store)
+        let navController = UINavigationController(rootViewController: viewController)
+        
+        self.present(navController, animated: true, completion: nil)
     }
 }
