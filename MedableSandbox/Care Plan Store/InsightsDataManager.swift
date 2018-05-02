@@ -16,22 +16,22 @@ class InsightsDataManager {
     
     
     func fetchDailyCompletion(startDate: DateComponents, endDate: DateComponents)  {
-        // 1
-        gatherDataGroup.enter()
-        // 2
-        store.dailyCompletionStatus(
-        with: .intervention,
-        startDate: startDate,
-        endDate: endDate,
-        // 3
-        handler: { (dateComponents, completed, total) in
-        let percentComplete = Double(completed) / Double(total)
-        self.completionData.append((dateComponents, percentComplete))
-        },
-        // 4
-        completion: { (success, error) in
-        guard success else { fatalError(error!.localizedDescription) }
-        self.gatherDataGroup.leave()
+            // 1
+            gatherDataGroup.enter()
+            // 2
+            store.dailyCompletionStatus(
+            with: .intervention,
+            startDate: startDate,
+            endDate: endDate,
+            // 3
+            handler: { (dateComponents, completed, total) in
+            let percentComplete = Double(completed) / Double(total)
+            self.completionData.append((dateComponents, percentComplete))
+            },
+            // 4
+            completion: { (success, error) in
+            guard success else { fatalError(error!.localizedDescription) }
+            self.gatherDataGroup.leave()
         })
     }
     

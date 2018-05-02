@@ -30,7 +30,17 @@ struct IbuprofenActivity {
 }
 
 class ActivityService : NSObject {
-    let carePlanStoreManager = CarePlanStoreManager.sharedManager
+    
+    let carePlanStore: OCKCarePlanStore
+    
+    init(carePlanStore: OCKCarePlanStore) {
+        self.carePlanStore = carePlanStore
+        super.init()
+        
+        self.addIbuprofenActivity()
+        self.makeActivities()
+        self.makeAssessmentActivities()
+    }
     
     class func dailyScheduleRepeating(occurencesPerDay: UInt) -> OCKCareSchedule {
         return OCKCareSchedule.dailySchedule(withStartDate: DateComponents.firstDateOfCurrentWeek,
@@ -54,9 +64,7 @@ class ActivityService : NSObject {
             userInfo: nil,
             optional: false)
         
-        self.carePlanStoreManager.store.add(carePlanActivity) { (success, error) in
-            // Error checking
-        }
+        self.carePlanStore.add(carePlanActivity, completion: self.handleError(success:error:))
         
     }
     
@@ -74,9 +82,7 @@ class ActivityService : NSObject {
             resultResettable: true,
             userInfo: nil)
         
-        self.carePlanStoreManager.store.add(cardioActivity) { (success, error) in
-            // Error checking
-        }
+        self.carePlanStore.add(cardioActivity, completion: self.handleError(success:error:))
         
         let limberUpActivity = OCKCarePlanActivity(
             identifier: ActivityIdentifier.limberUp.rawValue,
@@ -91,9 +97,7 @@ class ActivityService : NSObject {
             resultResettable: true,
             userInfo: nil)
         
-        self.carePlanStoreManager.store.add(limberUpActivity) { (success, error) in
-            // Error checking
-        }
+        self.carePlanStore.add(limberUpActivity, completion: self.handleError(success:error:))
         
         let targetPracticeActivity = OCKCarePlanActivity(
             identifier: ActivityIdentifier.targetPractice.rawValue,
@@ -108,10 +112,45 @@ class ActivityService : NSObject {
             resultResettable: true,
             userInfo: nil)
         
-        self.carePlanStoreManager.store.add(targetPracticeActivity) { (success, error) in
-            // Error checking
-        }
+        self.carePlanStore.add(targetPracticeActivity, completion: self.handleError(success:error:))
     }
     
+    func makeAssessmentActivities() {
+        let pulseActivity = OCKCarePlanActivity.assessment(
+            withIdentifier: ActivityIdentifier.pulse.rawValue,
+            groupIdentifier: nil,
+            title: ActivityIdentifier.pulse.rawValue,
+            text: "Do you have one?",
+            tintColor: UIColor.darkGreen(),
+            resultResettable: true,
+            schedule: ActivityService.dailyScheduleRepeating(occurencesPerDay: 1),
+            userInfo: ["ORKTask": AssessmentTaskFactory.makePulseAssessmentTask()],
+            optional: true)
+        
+        
+        let temperatureActivity = OCKCarePlanActivity
+            .assessment(withIdentifier: ActivityIdentifier.temperature.rawValue,
+                        groupIdentifier: nil,
+                        title: "Temperature",
+                        text: "Oral",
+                        tintColor: UIColor.darkYellow(),
+                        resultResettable: true,
+                        schedule: ActivityService.dailyScheduleRepeating(occurencesPerDay: 1),
+                        userInfo: ["ORKTask": AssessmentTaskFactory.makeTemperatureAssessmentTask()],
+                        optional: true)
+        
+        self.carePlanStore.add(pulseActivity, completion: self.handleError(success:error:))
+        self.carePlanStore.add(temperatureActivity, completion: self.handleError(success:error:))
+    }
     
+}
+
+private extension ActivityService {
+    
+    func handleError(success: Bool, error: Error?) {
+        if let e = error {
+            print(e.localizedDescription)
+            return
+        }
+    }
 }

@@ -89,25 +89,27 @@ private extension LoginTableViewController {
                 print("Callback returns error: \(error)")
                 
                 if error == nil {
-                    let activity = ActivityService()
-                    activity.addIbuprofenActivity()
+                    // TODO: Refactor to include TabBarController instantiation
+//                    let activity = ActivityService()
+//                    activity.addIbuprofenActivity()
                     
-                    let viewController = OCKCareCardViewController(carePlanStore: activity.carePlanStoreManager.store)
-                    let navController = UINavigationController(rootViewController: viewController)
-                    
-                    self.present(navController, animated: true, completion: nil)
+//                    let viewController = OCKCareCardViewController(carePlanStore: activity.carePlanStoreManager.store)
+//                    let navController = UINavigationController(rootViewController: viewController)
+//
+//                    self.present(navController, animated: true, completion: nil)
                 }
                 
         }
     }
     
     func showCareCard() {
-        let activity = ActivityService()
-        activity.addIbuprofenActivity()
-        activity.makeActivities()
-        let viewController = OCKCareCardViewController(carePlanStore: activity.carePlanStoreManager.store)
-        let navController = UINavigationController(rootViewController: viewController)
-        
-        self.present(navController, animated: true, completion: nil)
+        // TODO: Refactor to include TabBarController instantiation
+//        let activity = ActivityService()
+//        activity.addIbuprofenActivity()
+//        activity.makeActivities()
+//        let viewController = OCKCareCardViewController(carePlanStore: activity.carePlanStoreManager.store)
+//        let navController = UINavigationController(rootViewController: viewController)
+//
+//        self.present(navController, animated: true, completion: nil)
     }
 }

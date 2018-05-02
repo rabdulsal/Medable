@@ -33,9 +33,12 @@ class TabBarViewController: UITabBarController {
         case connect = "Connect"
     }
     
+    fileprivate let activityService: ActivityService
     fileprivate let carePlanStoreManager = CarePlanStoreManager.sharedManager
+    fileprivate var symptomTrackerViewController: OCKSymptomTrackerViewController? = nil
   
     required init?(coder aDecoder: NSCoder) {
+        self.activityService = ActivityService(carePlanStore: carePlanStoreManager.store)
         super.init(coder: aDecoder)
 
         let careCardStack = createCareCardStack()
@@ -66,10 +69,13 @@ class TabBarViewController: UITabBarController {
 
     fileprivate func createSymptomTrackerStack() -> UINavigationController {
         let title = TabTitles.symptomTracker.rawValue
-        let viewController = UIViewController()
+        let viewController = OCKSymptomTrackerViewController(carePlanStore: carePlanStoreManager.store)
+//        viewController.progressRingTintColor = UIColor.darkGreen()
+        symptomTrackerViewController = viewController
 
         viewController.tabBarItem = UITabBarItem(title: title, image: UIImage(named: "symptoms"), selectedImage: UIImage.init(named: "symptoms-filled"))
         viewController.title = title
+        viewController.delegate = self
 
         return UINavigationController(rootViewController: viewController)
     }
@@ -90,5 +96,36 @@ class TabBarViewController: UITabBarController {
         viewController.tabBarItem = UITabBarItem(title: title, image: UIImage(named: "connect"), selectedImage: UIImage.init(named: "connect-filled"))
         viewController.title = title
         return UINavigationController(rootViewController: viewController)
+    }
+}
+
+// MARK: - OCKSymptomTrackerViewControllerDelegate
+extension TabBarViewController: OCKSymptomTrackerViewControllerDelegate {
+    func symptomTrackerViewController(_ viewController: OCKSymptomTrackerViewController,
+                                      didSelectRowWithAssessmentEvent assessmentEvent: OCKCarePlanEvent) {
+        guard let userInfo = assessmentEvent.activity.userInfo,
+            let task: ORKTask = userInfo["ORKTask"] as? ORKTask else { return }
+        
+        let taskViewController = ORKTaskViewController(task: task, taskRun: nil)
+        taskViewController = self
+        
+        present(taskViewController, animated: true, completion: nil)
+    }
+}
+
+// MARK: - ORKTaskViewControllerDelegate
+extension TabBarViewController: ORKTaskViewControllerDelegate {
+    func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith
+        reason: ORKTaskViewControllerFinishReason, error: Error?) {
+        // 1
+        defer {
+            dismiss(animated: true, completion: nil)
+        }
+        
+        // 2
+        guard reason == .completed else { return }
+        guard let symptomTrackerViewController = symptomTrackerViewController,
+            let event = symptomTrackerViewController.lastSelectedAssessmentEvent else { return }
+        //TODO: convert ORKTaskResult to CareKit result and add to store
     }
 }
