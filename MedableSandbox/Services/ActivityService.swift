@@ -15,11 +15,12 @@ enum ActivityIdentifier: String {
     case targetPractice = "Target Practice"
     case pulse
     case temperature
+    case painMeds = "ibuprofenMedication"
 }
 
 struct IbuprofenActivity {
     
-    let identifier = "ibuprofenMedication"
+    let identifier = ActivityIdentifier.painMeds.rawValue
     let groupIdentifier = "Pain Medications"
     let title = "Ibuprofen"
     let text = "200mg"
