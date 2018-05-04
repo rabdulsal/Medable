@@ -36,11 +36,15 @@ class TabBarViewController: UITabBarController {
     fileprivate let activityService: ActivityService
     fileprivate let carePlanStoreManager = CarePlanStoreManager.sharedManager
     fileprivate var symptomTrackerViewController: OCKSymptomTrackerViewController? = nil
+    fileprivate var insightsViewController: OCKInsightsViewController? = nil
   
     required init?(coder aDecoder: NSCoder) {
         self.activityService = ActivityService(carePlanStore: carePlanStoreManager.store)
         super.init(coder: aDecoder)
-
+        
+        carePlanStoreManager.delegate = self
+        carePlanStoreManager.updateInsights()
+        
         let careCardStack = createCareCardStack()
         let symptomTrackerStack = createSymptomTrackerStack()
         let insightsStack = createInsightsStack()
@@ -82,7 +86,9 @@ class TabBarViewController: UITabBarController {
 
     fileprivate func createInsightsStack() -> UINavigationController {
         let title = TabTitles.insights.rawValue
-        let viewController = UIViewController()
+        let viewController = OCKInsightsViewController(insightItems: [OCKInsightItem.emptyInsightsMessage()])
+        insightsViewController = viewController
+        insightsViewController = viewController
 
         viewController.tabBarItem = UITabBarItem(title: title, image: UIImage(named: "insights"), selectedImage: UIImage.init(named: "insights-filled"))
         viewController.title = title
@@ -107,7 +113,7 @@ extension TabBarViewController: OCKSymptomTrackerViewControllerDelegate {
             let task: ORKTask = userInfo["ORKTask"] as? ORKTask else { return }
         
         let taskViewController = ORKTaskViewController(task: task, taskRun: nil)
-        taskViewController = self
+        taskViewController.delegate = self
         
         present(taskViewController, animated: true, completion: nil)
     }
@@ -126,6 +132,20 @@ extension TabBarViewController: ORKTaskViewControllerDelegate {
         guard reason == .completed else { return }
         guard let symptomTrackerViewController = symptomTrackerViewController,
             let event = symptomTrackerViewController.lastSelectedAssessmentEvent else { return }
-        //TODO: convert ORKTaskResult to CareKit result and add to store
+        
+        let carePlanResult = carePlanStoreManager.buildCarePlanResultFrom(taskResult: taskViewController.result)
+        carePlanStoreManager.store.update(event, with: carePlanResult, state: .completed) {
+            success, _, error in
+            if !success {
+                print(error?.localizedDescription)
+            }
+        }
+    }
+}
+
+// MARK: - CarePlanStoreManagerDelegate
+extension TabBarViewController: CarePlanStoreManagerDelegate {
+    func carePlanStore(_ store: OCKCarePlanStore, didUpdateInsights insights: [OCKInsightItem]) {
+        insightsViewController?.items = insights
     }
 }

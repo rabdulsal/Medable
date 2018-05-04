@@ -21,10 +21,15 @@
  */
 
 import CareKit
+import ResearchKit
+
+protocol CarePlanStoreManagerDelegate: class {
+    func carePlanStore(_: OCKCarePlanStore, didUpdateInsights insights: [OCKInsightItem])
+}
 
 class CarePlanStoreManager: NSObject {
     static let sharedManager = CarePlanStoreManager()
-  
+    weak var delegate: CarePlanStoreManagerDelegate?
     var store: OCKCarePlanStore
 
     override init() {
@@ -47,8 +52,25 @@ class CarePlanStoreManager: NSObject {
     func updateInsights() {
         InsightsDataManager().updateInsights { (success, insightItems) in
             guard let insightItems = insightItems, success else { return }
-            //TODO: pass insightItems to the insights controller
+            self.delegate?.carePlanStore(self.store, didUpdateInsights: insightItems)
         }
+    }
+    
+    func buildCarePlanResultFrom(taskResult: ORKTaskResult) -> OCKCarePlanEventResult {
+        // 1
+        guard let firstResult = taskResult.firstResult as? ORKStepResult,
+            let stepResult = firstResult.results?.first else {
+                fatalError("Unexepected task results")
+        }
+        
+        // 2
+        if let numericResult = stepResult as? ORKNumericQuestionResult,
+            let answer = numericResult.numericAnswer {
+            return OCKCarePlanEventResult(valueString: answer.stringValue, unitString: numericResult.unit, userInfo: nil)
+        }
+        
+        // 3
+        fatalError("Unexpected task result type")
     }
 }
 

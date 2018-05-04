@@ -13,7 +13,21 @@ class InsightsDataManager {
     let store = CarePlanStoreManager.sharedManager.store
     var completionData = [(dateComponent: DateComponents, value: Double)]()
     let gatherDataGroup = DispatchGroup()
-    
+    var completionSeries: OCKBarSeries {
+        // 1
+        let completionValues = completionData.map({ NSNumber(value:$0.value) })
+        
+        // 2
+        let completionValueLabels = completionValues
+            .map({ NumberFormatter.localizedString(from: $0, number: .percent)})
+        
+        // 3
+        return OCKBarSeries(
+            title: "Fitness Training",
+            values: completionValues,
+            valueLabels: completionValueLabels,
+            tintColor: UIColor.darkOrange())
+    }
     
     func fetchDailyCompletion(startDate: DateComponents, endDate: DateComponents)  {
             // 1
@@ -49,9 +63,47 @@ class InsightsDataManager {
             
             // 3
             self.gatherDataGroup.notify(queue: DispatchQueue.main, execute: {
-                print("completion data: \(self.completionData)")
-                completion(false, nil)
+                let insightItems = self.produceInsightsForAdherence()
+                completion(true, insightItems)
             })
         }
+    }
+    
+    func produceInsightsForAdherence() -> [OCKInsightItem] {
+        // 1
+        let dateStrings = completionData.map({(entry) -> String in
+            guard let date = Calendar.current.date(from: entry.dateComponent)
+                else { return "" }
+            return DateFormatter.localizedString(from: date, dateStyle: .short, timeStyle: .none)
+        })
+        
+        //TODO: Build assessment series
+        
+        // 2
+        let chart = OCKBarChart(
+            title: "Fitness Training",
+            text: "Training Compliance and Health Risks",
+            tintColor: UIColor.green,
+            axisTitles: dateStrings,
+            axisSubtitles: nil,
+            dataSeries: [completionSeries])
+        
+        return [chart]
+    }
+    
+    func findActivityWith(_ activityIdentifier: ActivityIdentifier) -> OCKCarePlanActivity? {
+        let semaphore = DispatchSemaphore(value: 0)
+        var activity: OCKCarePlanActivity?
+        
+        DispatchQueue.main.async {
+            self.store.activity(forIdentifier: activityIdentifier.rawValue) { success, foundActivity, error in
+                activity = foundActivity
+                semaphore.signal()
+            }
+        }
+        
+        let _ = semaphore.wait(timeout: DispatchTime.distantFuture)
+        
+        return activity
     }
 }
